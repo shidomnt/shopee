@@ -30,3 +30,18 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes disapper {
+    to {
+        opacity: 0;
+    }
+}

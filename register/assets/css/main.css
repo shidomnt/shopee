@@ -1,0 +1,284 @@
+.align-center {
+    text-align: center !important;
+}
+
+
+/* Header */
+
+.header-content {
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    height: 50px;
+}
+
+.header__title {
+    align-self: flex-end;
+    font-size: 2.4rem;
+    padding-bottom: 8px;
+}
+
+.header__link {
+    color: red;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+
+/* Container */
+
+.containter {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    background-color: rgb(238, 77, 45);
+}
+
+.containter__content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.containter-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__logo {
+    flex-flow: column nowrap;
+    color: var(--white-color);
+}
+
+.container__logo-text {
+    max-width: 80%;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    text-align: center;
+    flex: 1;
+}
+
+
+/* Container Form */
+
+.container__form {}
+
+.form--spacing {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-content {
+    width: 400px;
+    background-color: var(--white-color);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.form__header {
+    font-size: 2.4rem;
+    color: var(--text-color);
+}
+
+.form__tel-input,
+.form__submit {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.form__tel-input {
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.form__submit {
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: #EE4D2D;
+    font-size: 1.4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form__footer-content {
+    border: none;
+    border-top: 1px solid rgba(7, 7, 7, 0.3);
+    padding: 0;
+}
+
+.form__footer-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    opacity: 0.3;
+    margin: 0 20px;
+}
+
+.form__footer-btn-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.form__footer-link {
+    color: var(--white-color);
+    text-decoration: none;
+    display: block;
+    width: calc(100%/3 - 2%);
+    height: 40px;
+}
+
+.btn {
+    padding: 10px 10px;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    color: var(--white-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn--facebook {
+    background-color: #1877F2;
+}
+
+.btn--google {
+    background-color: #4285F4;
+}
+
+.btn--apple {
+    background-color: #000000;
+}
+
+.btn__icon {
+    font-size: 1.6rem;
+}
+
+.form__footer-text {
+    font-size: 1.2rem;
+    padding: 0 40px;
+}
+
+.text--link {
+    color: red;
+    text-decoration: none;
+}
+
+.form__status {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.opac-low {
+    opacity: 0.4;
+}
+
+
+/* Footer */
+
+.footer__contact-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.footer__contact-info a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__contact-item {
+    flex: 1;
+}
+
+.list--title {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.list--item {
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    opacity: 0.7;
+}
+
+.list--item:hover {
+    color: red;
+    opacity: 1;
+}
+
+.follow__item-icon {
+    margin-right: 10px;
+}
+
+.download__item {
+    margin: 10px 0;
+}
+
+.download__item-img {
+    height: 18px;
+}
+
+.list--wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.item--wrap-3 {
+    width: calc(100%/3);
+}
+
+.list--nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.download__qr,
+.download__list {
+    flex: 1;
+}
+
+.payment-shipping {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-right: 50px;
+}
+
+.payment__item--background {
+    padding-top: 16%;
+    background: url(../../../assets/img/visa-payment.png) no-repeat;
+    background-size: 100%;
+}
+
+.shipping-unit__item--background {
+    padding-top: 16%;
+    background: url(../../../assets/img/shipping-unit.png) no-repeat;
+    background-size: 100%;
+}
+
+.download__qr--background {
+    padding-top: 50%;
+    background: url(../../../assets/img/qrcode.png) no-repeat;
+    background-size: 100%;
+}
