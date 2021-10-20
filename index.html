@@ -36,7 +36,7 @@
                             </a>
                         </li>
                         <li class="navbar__item navbar__item--separate">
-                            <a href="" class="navbar__item-link navbar__item-link-qrcode">
+                            <a href="https://shopee.vn/web" target="_blank" class="navbar__item-link navbar__item-link-qrcode">
                                 <span class="navbar__item-title--hover">
                                     Tải ứng dụng
                                 </span>
@@ -52,10 +52,10 @@
                         </li>
                         <li class="navbar__item">
                             Kết nối
-                            <a href="" class="navbar__item-link">
+                            <a href="https://www.facebook.com/ShopeeVN" target="_blank" class="navbar__item-link">
                                 <i class="header__navbar-icon fab fa-facebook"></i>
                             </a>
-                            <a href="" class="navbar__item-link">
+                            <a href="https://www.instagram.com/Shopee_VN/" target="_blank" class="navbar__item-link">
                                 <i class="header__navbar-icon fab fa-instagram"></i>
                             </a>
                         </li>
@@ -72,8 +72,8 @@
                                     <p class="popout-box__desc">Đăng nhập để xem Thông báo</p>
                                 </div>
                                 <div class="popout-box__footer">
-                                    <div class="popout-box__footer-button"><a href="./register/" target="_blank">Đăng Ký</a></div>
-                                    <div class="popout-box__footer-button"><a href="">Đăng Nhập</a></div>
+                                    <div class="popout-box__footer-button"><a href="./register/">Đăng Ký</a></div>
+                                    <div class="popout-box__footer-button"><a href="./login/">Đăng Nhập</a></div>
                                 </div>
                             </div>
                             </span>
@@ -86,14 +86,14 @@
                             </a>
                         </li>
                         <li class="navbar__item navbar__item--bold navbar__item--separate">
-                            <a href="./register/" class="navbar__item-link" target="_blank">
+                            <a href="./register/" class="navbar__item-link">
                                 <span class="navbar__item-title--hover">
                                     Đăng Kí
                                 </span>
                             </a>
                         </li>
                         <li class="navbar__item navbar__item--bold">
-                            <a href="" class="navbar__item-link">
+                            <a href="./login/" class="navbar__item-link">
                                 <span class="navbar__item-title--hover">
                                     Đăng Nhập
                                 </span>
@@ -105,9 +105,7 @@
             <div class="grid">
                 <!-- Search Bar -->
                 <div class="header__search">
-                    <div class="search__logo">
-                        <img src="./assets/img/logo-shoppe.jpg" alt="" class="search__logo-img">
-                    </div>
+                    <a href="/" class="search__logo search__logo--background"></a>
                     <div class="search__content">
                         <div class="search-bar">
                             <form action="" method="post" class="search__content-form">
@@ -1099,50 +1097,48 @@
                         </a>
                     </div>
                 </div>
+                <!-- Switch Page -->
+                <div class="container__switch-bar">
+                    <div class="container__switch-btn sortbar-item">
+                        <a href=""><i class="fas fa-angle-left"></i></a>
+                    </div>
+                    <div class="container__switch-btn sortbar-item">
+                        <a href="">
+                            <span class="page_number">1</span>
+                        </a>
+                    </div>
+                    <div class="container__switch-btn sortbar-item">
+                        <a href="">
+                            <span class="page_number">2</span>
+                        </a>
+                    </div>
+                    <div class="container__switch-btn sortbar-item">
+                        <a href="">
+                            <span class="page_number">3</span>
+                        </a>
+                    </div>
+                    <div class="container__switch-btn sortbar-item">
+                        <a href="">
+                            <span class="page_number">4</span>
+                        </a>
+                    </div>
+                    <div class="container__switch-btn sortbar-item">
+                        <a href="">
+                            <span class="page_number">5</span>
+                        </a>
+                    </div>
+                    <div class="container__switch-btn sortbar-item">
+                        <a href="">
+                            <span class="page_number">...</span>
+                        </a>
+                    </div>
+                    <div class="container__switch-btn sortbar-item">
+                        <a href=""><i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <!-- Switch Page -->
-        <div class="container__switch-bar">
-            <div class="container__switch-btn sortbar-item">
-                <a href=""><i class="fas fa-angle-left"></i></a>
-            </div>
-            <div class="container__switch-btn sortbar-item">
-                <a href="">
-                    <span class="page_number">1</span>
-                </a>
-            </div>
-            <div class="container__switch-btn sortbar-item">
-                <a href="">
-                    <span class="page_number">2</span>
-                </a>
-            </div>
-            <div class="container__switch-btn sortbar-item">
-                <a href="">
-                    <span class="page_number">3</span>
-                </a>
-            </div>
-            <div class="container__switch-btn sortbar-item">
-                <a href="">
-                    <span class="page_number">4</span>
-                </a>
-            </div>
-            <div class="container__switch-btn sortbar-item">
-                <a href="">
-                    <span class="page_number">5</span>
-                </a>
-            </div>
-            <div class="container__switch-btn sortbar-item">
-                <a href="">
-                    <span class="page_number">...</span>
-                </a>
-            </div>
-            <div class="container__switch-btn sortbar-item">
-                <a href=""><i class="fas fa-angle-right"></i></a>
-            </div>
-        </div>
-    </footer>
     <script>
         //Sort Button
         const sortBtns = document.querySelectorAll('.js-sort-btn');

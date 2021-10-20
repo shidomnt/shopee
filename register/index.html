@@ -21,54 +21,49 @@
             <div class="grid">
                 <div class="header-content">
                     <div class="header__left">
-                        <div class="header__logo">
-                            <img src="../assets/img/shopee-logo-31408.png" alt="" class="header__logo-img">
-                        </div>
+                        <a href="/">
+                            <div class="header__logo header__logo--background"></div>
+                        </a>
                         <div class="header__title">Đăng ký</div>
                     </div>
                     <div class="header__right">
-                        <a href="" class="header__link">Cần trợ giúp?</a>
+                        <a href="https://help.shopee.vn/vn/s/" class="header__link" target="_blank">Cần trợ giúp?</a>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Container -->
-        <div class="containter">
-            <div class="grid">
-                <div class="containter__content">
-                    <div class="container__logo containter-item">
-                        <img src="../assets/img/shoppe--logo.png" alt="" class="container__logo-img">
-                        <div class="container__logo-text">
-                            Nền tảng thương mại điện tử yêu thích ở Đông Nam Á & Đài Loan
-                        </div>
-                    </div>
-                    <div class="container__form containter-item">
-                        <form action="" method="post" class="form-content">
+        <div class="container">
+            <div class="grid list--nowrap" style="justify-content: center;">
+                <div class="container__content">
+                    <div class="container__logo container-item"></div>
+                    <div class="container__form container-item">
+                        <form action="" method="post" name="container__form" class="form-content">
                             <div class="form__header form--spacing">
                                 Đăng Ký
                             </div>
-                            <input type="tel" name="tel-num" id="tel-num" placeholder="Số điện thoại" class="form__tel-input">
-                            <div class="form__submit form--spacing">
+                            <input type="tel" name="tel-num" id="tel-num" placeholder="Số điện thoại" required class="form__tel-input" oninvalid="this.setCustomValidity('Nhập số điện thoại vào đây')" oninput="this.setCustomValidity('')">
+                            <button id="form__submit-btn" type="submit" class="form__submit form--spacing">
                                 Tiếp theo
-                            </div>
+                            </button>
                             <div class="form__footer form--spacing">
                                 <fieldset class="form__footer-content ">
                                     <legend class="align-center"><span class="form__footer-title">Hoặc</span></legend>
                                     <div class="form__footer-btn-list form--spacing">
-                                        <a href="" class="form__footer-link">
+                                        <a href="https://www.facebook.com/" target="_blank" class="form__footer-link">
                                             <div class="btn btn--facebook">
                                                 <i class="btn__icon fab fa-facebook"></i>
                                                 <span class="btn-text">Facebook</span>
                                             </div>
                                         </a>
-                                        <a href="" class="form__footer-link">
+                                        <a href="https://www.google.com/" target="_blank" class="form__footer-link">
 
                                             <div class="btn btn--google ">
                                                 <i class="btn__icon fab fa-google"></i>
                                                 <span class="btn-text">Google</span>
                                             </div>
                                         </a>
-                                        <a href="" class="form__footer-link">
+                                        <a href="https://www.linkedin.com/" target="_blank" class="form__footer-link">
 
                                             <div class="btn btn--apple ">
                                                 <i class="btn__icon fab fa-apple"></i>
@@ -78,8 +73,8 @@
                                     </div>
                                     <div class="form__footer-text align-center form--spacing">
                                         Bằng việc đăng kí, bạn đã đồng ý với Shopee về
-                                        <a href="" class="text-rules text--link">Điều khoản dịch vụ </a> &
-                                        <a href="" class="text-policy text--link"> Chính sách bảo mật</a>
+                                        <a href="https://shopee.vn/legaldoc/termsOfService/" target="_blank" class="text-rules text--link">Điều khoản dịch vụ </a> &
+                                        <a href="https://shopee.vn/legaldoc/privacy/" target="_blank" class="text-policy text--link"> Chính sách bảo mật</a>
                                     </div>
                                 </fieldset>
                             </div>
@@ -87,7 +82,7 @@
                                 <span class="opac-low">
                                     Bạn đã có tài khoản?
                                 </span>
-                                <a href="" class="link-login text--link">Đăng nhập</a>
+                                <a href="/login/" class="link-login text--link">Đăng nhập</a>
                             </div>
                         </form>
                     </div>
@@ -150,44 +145,44 @@
                         <div class="payment__text list--title">THANH TOÁN</div>
                         <div class="payment-shipping">
                             <div class="payment__list list--wrap">
-                                <div class="payment__item payment__item--background item--wrap-3"></div>
-                                <div class="payment__item payment__item--background item--wrap-3"></div>
-                                <div class="payment__item payment__item--background item--wrap-3"></div>
-                                <div class="payment__item payment__item--background item--wrap-3"></div>
-                                <div class="payment__item payment__item--background item--wrap-3"></div>
-                                <div class="payment__item payment__item--background item--wrap-3"></div>
-                                <div class="payment__item payment__item--background item--wrap-3"></div>
+                                <div class="payment__item payment__item--background background--visa item--wrap-3"></div>
+                                <div class="payment__item payment__item--background background--mastercard item--wrap-3"></div>
+                                <div class="payment__item payment__item--background background--jcb item--wrap-3"></div>
+                                <div class="payment__item payment__item--background background--acb item--wrap-3"></div>
+                                <div class="payment__item payment__item--background background--cod item--wrap-3"></div>
+                                <div class="payment__item payment__item--background background--tragop item--wrap-3"></div>
+                                <div class="payment__item payment__item--background background--shoppepay item--wrap-3"></div>
                             </div>
                             <div class="payment__text list--title">Đơn vị vận chuyển</div>
                             <div class="shipping-unit__list list--wrap">
-                                <div class="shipping-unit__item shipping-unit__item--background item--wrap-3"></div>
-                                <div class="shipping-unit__item shipping-unit__item--background item--wrap-3"></div>
-                                <div class="shipping-unit__item shipping-unit__item--background item--wrap-3"></div>
-                                <div class="shipping-unit__item shipping-unit__item--background item--wrap-3"></div>
-                                <div class="shipping-unit__item shipping-unit__item--background item--wrap-3"></div>
-                                <div class="shipping-unit__item shipping-unit__item--background item--wrap-3"></div>
-                                <div class="shipping-unit__item shipping-unit__item--background item--wrap-3"></div>
-                                <div class="shipping-unit__item shipping-unit__item--background item--wrap-3"></div>
-                                <div class="shipping-unit__item shipping-unit__item--background item--wrap-3"></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--spexpress item--wrap-3"></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--ghtk item--wrap-3"></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--ghn item--wrap-3"></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--viettelpost item--wrap-3"></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--vnpost item--wrap-3"></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--jnt item--wrap-3"></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--grab item--wrap-3"></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--ninja item--wrap-3"></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--best item--wrap-3"></div>
                             </div>
                         </div>
                     </div>
                     <div class="footer__contact-item footer__follow">
                         <div class="follow__text list--title">THEO DÕI CHÚNG TÔI TRÊN</div>
                         <div class="follow__list">
-                            <a href="">
+                            <a href="https://www.facebook.com/" target="_blank">
                                 <div class="follow__item list--item">
                                     <i class="follow__item-icon fab fa-facebook-square"></i>
                                     <span class="follow__item-text">Facebook</span>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://www.google.com/" target="_blank">
                                 <div class="follow__item list--item">
                                     <i class="follow__item-icon fab fa-instagram-square"></i>
                                     <span class="follow__item-text">Instagram</span>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://www.linkedin.com/" target="_blank">
                                 <div class="follow__item list--item">
                                     <i class="follow__item-icon fab fa-linkedin"></i>
                                     <span class="follow__item-text">Linkedin</span>
@@ -200,17 +195,17 @@
                         <div class="list--nowrap">
                             <div class="download__qr download__qr--background"></div>
                             <div class="download__list">
-                                <a href="">
+                                <a href="https://shopee.vn/web" target="_blank">
                                     <div class="download__item">
                                         <img src="../assets/img/appstore.png" alt="" class="download__item-img">
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="https://shopee.vn/web" target="_blank">
                                     <div class="download__item">
                                         <img src="../assets/img/ggplay.png" alt="" class="download__item-img">
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="https://shopee.vn/web" target="_blank">
                                     <div class="download__item">
                                         <img src="../assets/img/appgallery.png" alt="" class="download__item-img">
                                     </div>
@@ -219,10 +214,69 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="grid">
+                <hr class="line-sperate">
+            </div>
+            <div class="grid">
+                <div class="list-col right-nation">
+                    <div class="right">
+                        © 2021 Shopee. Tất cả các quyền được bảo lưu.
+                    </div>
+                    <div class="nation-list list--wrap">
+                        <div class="nation-list__title">Quốc gia & Khu vực:</div>
+                        <div class="nation-item"><a href="">Singapore</a></div>
+                        <div class="nation-item"><a href="">Indonesia</a></div>
+                        <div class="nation-item"><a href="">Đài Loan</a></div>
+                        <div class="nation-item"><a href="">Thái Lan</a></div>
+                        <div class="nation-item"><a href="">Malaysia</a></div>
+                        <div class="nation-item"><a href="">Việt Nam</a></div>
+                        <div class="nation-item"><a href="">Philippines</a></div>
+                        <div class="nation-item"><a href="">Brazil</a></div>
+                        <div class="nation-item"><a href="">México</a></div>
+                        <div class="nation-item"><a href="">Colombia</a></div>
+                        <div class="nation-item"><a href="">Chile</a></div>
+                        <div class="nation-item"><a href="">Poland</a></div>
+                        <div class="nation-item"><a href="">Spain</a></div>
+                    </div>
+                </div>
+                <div class="policy-list list--wrap">
+                    <div class="policy-item"><a href="https://shopee.vn/legaldoc/privacy" target="_blank">CHÍNH SÁCH BẢO MẬT</a></div>
+                    <div class="policy-item policy-item--sperate"><a href="https://shopee.vn/docs/170" target="_blank">QUY CHẾ HOẠT ĐỘNG</a></div>
+                    <div class="policy-item policy-item--sperate"><a href="https://shopee.vn/legaldoc/shipping" target="_blank">CHÍNH SÁCH VẬN CHUYỂN</a></div>
+                    <div class="policy-item policy-item--sperate"><a href="https://shopee.vn/docs/3111" target="_blank">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a></div>
+                </div>
+                <div class="certification">
+                    <div class="certification-list list--wrap">
+                        <a href="http://online.gov.vn/Home/WebDetails/18367" target="_blank" class="certification-link">
+                            <div class="certification-item certification-item--background background--bocongthuong"></div>
+                        </a>
+                        <a href="http://online.gov.vn/Home/AppDetails/29" target="_blank" class="certification-link">
+                            <div class="certification-item certification-item--background background--bocongthuong"></div>
+                        </a>
+                        <a href="https://shopee.vn/docs/170" target="_blank" class="certification-link">
+                            <div class="certification-item certification-item--background background--fingerprint"></div>
+                        </a>
+                    </div>
+                    <div class="certification-label align-center footer-text--low">Công ty TNHH Shopee</div>
+                </div>
+                <div class="address align-center footer-text--low footer--spacing">
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn
+                </div>
+                <div class="responsible align-center footer-text--low footer--spacing">
+                    Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)
+                </div>
+                <div class="business-code align-center footer-text--low footer--spacing">
+                    Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015
+                </div>
+                <div class="copyright align-center footer-text--low footer--spacing">
+                    © 2015 - Bản quyền thuộc về Công ty TNHH Shopee
+                </div>
             </div>
         </footer>
     </div>
+    <script>
+    </script>
 </body>
 
 </html>

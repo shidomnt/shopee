@@ -16,10 +16,17 @@
 .header__left {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-.header__logo-img {
+.header__logo {
+    width: 152px;
     height: 50px;
+}
+
+.header__logo--background {
+    background: url(../../../assets/img/shopee-logo-31408.png) no-repeat;
+    background-size: 100%;
 }
 
 .header__title {
@@ -37,23 +44,25 @@
 
 /* Container */
 
-.containter {
+.container {
     display: flex;
-    align-items: center;
     min-height: 600px;
     background-color: rgb(238, 77, 45);
 }
 
-.containter__content {
+.container__content {
+    width: 1040px;
+    background: url(../img/bgcontainer.png);
+    background-size: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
-.containter-item {
+.container-item {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -110,6 +119,12 @@
     font-size: 1.4rem;
     text-align: center;
     cursor: pointer;
+    border: none;
+}
+
+.form__submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
 }
 
 .form__footer-content {
@@ -192,6 +207,17 @@
 
 /* Footer */
 
+.footer {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 250px;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .footer__contact-info {
     display: flex;
     flex-flow: row nowrap;
@@ -218,8 +244,8 @@
 }
 
 .list--item {
-    font-size: 1.2rem;
     margin: 10px 0px;
+    font-size: 1.2rem;
     opacity: 0.7;
 }
 
@@ -265,20 +291,191 @@
     padding-right: 50px;
 }
 
-.payment__item--background {
-    padding-top: 16%;
-    background: url(../../../assets/img/visa-payment.png) no-repeat;
+.payment__item--background,
+.shipping-unit__item--background {
+    width: 55px;
+    height: 29px;
+    margin: 0 8px 8px 0;
     background-size: 100%;
+    background: url(../img/logo-list.png);
 }
 
-.shipping-unit__item--background {
-    padding-top: 16%;
-    background: url(../../../assets/img/shipping-unit.png) no-repeat;
-    background-size: 100%;
+.background--visa {
+    background-position: 85% 3%;
+}
+
+.background--mastercard {
+    background-position: 49% 42%;
+}
+
+.background--jcb {
+    background-position: 38% 38%;
+}
+
+.background--acb {
+    background-position: 0% 0%;
+}
+
+.background--cod {
+    background-position: 60% 63%;
+}
+
+.background--tragop {
+    background-position: 20% 66%;
+}
+
+.background--shoppepay {
+    background-position: 72% -5%;
+    background-size: 667%;
+}
+
+.background--spexpress {
+    background-position: 65.71428571428571% 35.22012578616352%;
+}
+
+.background--ghtk {
+    background-position: 19.97084548104956% 37.735849056603776%;
+}
+
+.background--ghn {
+    background-size: 1347.2727272727273% 610.3448275862069%;
+    background-position: 9.037900874635568% 40.54054054054054%;
+}
+
+.background--viettelpost {
+    background-position: 89% 66%;
+    background-size: 587%;
+}
+
+.background--vnpost {
+    background-size: 1347.2727272727273% 655.5555555555555%;
+    background-position: 1.4577259475218658% 72.66666666666667%;
+}
+
+.background--jnt {
+    background-position: 95.6268221574344% 6.211180124223603%;
+}
+
+.background--grab {
+    background-size: 552.9850746268656%;
+    background-position: 28.9835255354201% -11.243243%;
+}
+
+.background--ninja {
+    background-size: 1235% 680.7692307692307%;
+    background-position: 55.947136563876654% 6.622516556291391%;
+}
+
+.background--best {
+    background-size: 1029.1666666666667% 590%;
+    background-position: 13.452914798206278% 6.802721088435374%;
 }
 
 .download__qr--background {
     padding-top: 50%;
     background: url(../../../assets/img/qrcode.png) no-repeat;
     background-size: 100%;
+}
+
+.list-col {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    opacity: 0.7;
+}
+
+.line-sperate {
+    margin: 25px 0 40px;
+    border: 1px solid rgba(7, 7, 7, 0.08);
+}
+
+.right-nation {
+    margin-bottom: 60px;
+}
+
+.right {
+    flex: 2;
+}
+
+.nation-list {
+    flex: 5;
+    justify-content: center;
+}
+
+.nation-item {
+    padding: 0 5px;
+}
+
+.nation-item+.nation-item {
+    border-left: 1px solid #777;
+}
+
+.policy-list {
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.policy-item {
+    margin: 0 15px;
+    position: relative;
+    font-size: 1.4rem;
+    opacity: 0.7;
+}
+
+.policy-item--sperate::before {
+    width: 1px;
+    height: 15px;
+    display: block;
+    content: "";
+    border-left: 1px solid #777;
+    position: absolute;
+    left: -15px;
+    opacity: 0.2;
+}
+
+.certification {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+.certification-list {
+    justify-content: center;
+    height: 48px;
+}
+
+.certification-item {
+    width: 120px;
+    height: 48px;
+    margin: 0 20px;
+}
+
+.certification-item--background {
+    background: url(../img/logo-list.png);
+}
+
+.background--bocongthuong {
+    background-position: 34% 85%;
+}
+
+.background--fingerprint {
+    width: 48px;
+    background-position: 100% 36%;
+}
+
+.certification-img {
+    height: 100%;
+}
+
+.certification-label {
+    padding: 10px 0 0;
+}
+
+.footer-text--low {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.footer--spacing {
+    margin: 5px 0;
 }
