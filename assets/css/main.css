@@ -15,7 +15,7 @@
 .header__navbar {
     display: flex;
     justify-content: space-between;
-    margin: 0 -8px 5px;
+    margin: 0 0 5px;
 }
 
 .navbar__list {
@@ -63,6 +63,8 @@
 .navbar__item-link {
     cursor: pointer;
 }
+
+.bridge::after {}
 
 .header__navbar-icon {
     font-size: 1.6rem;
@@ -117,6 +119,20 @@
 
 .navbar__item-link-popout-box:hover .popout-box {
     display: flex;
+}
+
+.navbar__item-link-popout-box {
+    position: relative;
+}
+
+.navbar__item-link-popout-box::after {
+    width: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 1.5rem;
 }
 
 .popout-box::before {
@@ -355,9 +371,9 @@
 }
 
 .search__cart-popout-box::before {
-    border: 1.2rem solid transparent;
-    border-bottom: 1.2rem solid var(--white-color);
-    right: 0.2rem;
+    border: 1.4rem solid transparent;
+    border-bottom: 0.8rem solid var(--white-color);
+    right: 1.4rem;
     top: -2.1rem;
 }
 
@@ -367,6 +383,7 @@
 
 .search__cart-content:hover .popout-box {
     display: flex;
+    right: -15px;
 }
 
 
