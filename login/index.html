@@ -1,0 +1,314 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/shoppe--logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="../assets/js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Đăng nhập tài khoản - Mua sắm ngay tại Shoppe</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid">
+                <div class="header-content">
+                    <div class="header__left">
+                        <a href="/">
+                            <div class="header__logo header__logo--background"></div>
+                        </a>
+                        <div class="header__title">Đăng nhập</div>
+                    </div>
+                    <div class="header__right">
+                        <a href="https://help.shopee.vn/vn/s/" class="header__link" target="_blank">Cần trợ giúp?</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Container -->
+        <div class="container">
+            <div class="grid list--nowrap" style="justify-content: center;">
+                <div class="container__content">
+                    <div class="container__logo container-item"></div>
+                    <div class="container__form container-item">
+                        <form action="" method="post" name="container__form" class="form-content">
+                            <div class="form__header">
+                                Đăng Nhập
+                                <div class="small-box">
+                                    <div class="box">
+                                        Đăng nhập với mã QR
+                                    </div>
+                                    <div class="box__qrscan ">
+                                        <a href="">
+                                            <div class="qrsize box__qrscan--background"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" name="account" id="account" placeholder="Email/Số điện thoại/Tên đăng nhập" required class="form__input">
+                            </div>
+                            <div class="input-box">
+                                <input type="password" name="password-n" id="password" placeholder="Mật khẩu" required class="form__input form__input--password">
+                                <div class="input-f-btn" onclick="ChangeTypePass()">
+                                    <i id="hide" class="fas fa-eye-slash"></i>
+                                    <i id="display" class="fas fa-eye" style="display: none;"></i>
+                                </div>
+                            </div>
+                            <button id="form__submit-btn " type="submit " class="form__submit form--spacing ">
+                                Đăng nhập
+                            </button>
+                            <div class="list--nowrap " style="justify-content: space-between; ">
+                                <a href=" " class="text--link " style="color: #05a; ">Quên mật khẩu</a>
+                                <a href=" " class="text--link " style="color: #05a; ">Đăng nhập với SMS</a>
+                            </div>
+                            <div class="form__footer form--spacing ">
+                                <fieldset class="form__footer-content ">
+                                    <legend class="align-center "><span class="form__footer-title ">Hoặc</span></legend>
+                                    <div class="form__footer-btn-list form--spacing ">
+                                        <a href="https://www.facebook.com/ " target="_blank " class="form__footer-link ">
+                                            <div class="btn btn--facebook ">
+                                                <i class="btn__icon fab fa-facebook "></i>
+                                                <span class="btn-text ">Facebook</span>
+                                            </div>
+                                        </a>
+                                        <a href="https://www.google.com/ " target="_blank " class="form__footer-link ">
+
+                                            <div class="btn btn--google ">
+                                                <i class="btn__icon fab fa-google "></i>
+                                                <span class="btn-text ">Google</span>
+                                            </div>
+                                        </a>
+                                        <a href="https://www.linkedin.com/ " target="_blank " class="form__footer-link ">
+
+                                            <div class="btn btn--apple ">
+                                                <i class="btn__icon fab fa-apple "></i>
+                                                <span class="btn-text ">Apple</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="form__status align-center form--spacing ">
+                                <span class="opac-low ">
+                                    Bạn mới biết đến Shopee?
+                                </span>
+                                <a href="/register/ " class="link-login text--link ">Đăng ký</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer ">
+            <div class="grid ">
+                <div class="footer__contact-info ">
+                    <div class="footer__contact-item footer__contact-item footer__customer-care ">
+                        <div class="customer-care__text list--title ">CHĂM SÓC KHÁCH HÀNG</div>
+                        <div class="customer-care__list ">
+                            <div class="customer-care__item list--item "><a href=" ">Trung Tâm Trợ Giúp</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Shopee Blog</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Shopee Mall</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Hướng Dẫn Mua Hàng</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Hướng Dẫn Bán Hàng</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Thanh Toán</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Shopee Xu</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Vận Chuyển</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Trả Hàng & Hoàn Tiền</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Chăm Sóc Khách Hàng</a></div>
+                            <div class="customer-care__item list--item "><a href=" ">Chính Sách Bảo Hành</a></div>
+                        </div>
+                    </div>
+                    <div class="footer__contact-item footer__about ">
+                        <div class="about__text list--title ">VỀ SHOPEE</div>
+                        <div class="about__list ">
+                            <div class="about__item list--item ">
+                                <a href=" ">Giới Thiệu Về Shopee Việt Nam</a>
+                            </div>
+                            <div class="about__item list--item ">
+                                <a href=" ">Tuyển Dụng</a>
+                            </div>
+                            <div class="about__item list--item ">
+                                <a href=" ">Điều Khoản Shopee</a>
+                            </div>
+                            <div class="about__item list--item ">
+                                <a href=" ">Chính Sách Bảo Mật</a>
+                            </div>
+                            <div class="about__item list--item ">
+                                <a href=" ">Chính Hãng</a>
+                            </div>
+                            <div class="about__item list--item ">
+                                <a href=" ">Kênh Người Bán</a>
+                            </div>
+                            <div class="about__item list--item ">
+                                <a href=" ">Flash Sales</a>
+                            </div>
+                            <div class="about__item list--item ">
+                                <a href=" ">Chương Trình Tiếp Thị Liên Kết Shopee</a>
+                            </div>
+                            <div class="about__item list--item ">
+                                <a href=" ">Liên Hệ Với Truyền Thông</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__contact-item footer__payment ">
+                        <div class="payment__text list--title ">THANH TOÁN</div>
+                        <div class="payment-shipping ">
+                            <div class="payment__list list--wrap ">
+                                <div class="payment__item payment__item--background background--visa item--wrap-3 "></div>
+                                <div class="payment__item payment__item--background background--mastercard item--wrap-3 "></div>
+                                <div class="payment__item payment__item--background background--jcb item--wrap-3 "></div>
+                                <div class="payment__item payment__item--background background--acb item--wrap-3 "></div>
+                                <div class="payment__item payment__item--background background--cod item--wrap-3 "></div>
+                                <div class="payment__item payment__item--background background--tragop item--wrap-3 "></div>
+                                <div class="payment__item payment__item--background background--shoppepay item--wrap-3 "></div>
+                            </div>
+                            <div class="payment__text list--title ">Đơn vị vận chuyển</div>
+                            <div class="shipping-unit__list list--wrap ">
+                                <div class="shipping-unit__item shipping-unit__item--background background--spexpress item--wrap-3 "></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--ghtk item--wrap-3 "></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--ghn item--wrap-3 "></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--viettelpost item--wrap-3 "></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--vnpost item--wrap-3 "></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--jnt item--wrap-3 "></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--grab item--wrap-3 "></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--ninja item--wrap-3 "></div>
+                                <div class="shipping-unit__item shipping-unit__item--background background--best item--wrap-3 "></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__contact-item footer__follow ">
+                        <div class="follow__text list--title ">THEO DÕI CHÚNG TÔI TRÊN</div>
+                        <div class="follow__list ">
+                            <a href="https://www.facebook.com/ " target="_blank ">
+                                <div class="follow__item list--item ">
+                                    <i class="follow__item-icon fab fa-facebook-square "></i>
+                                    <span class="follow__item-text ">Facebook</span>
+                                </div>
+                            </a>
+                            <a href="https://www.google.com/ " target="_blank ">
+                                <div class="follow__item list--item ">
+                                    <i class="follow__item-icon fab fa-instagram-square "></i>
+                                    <span class="follow__item-text ">Instagram</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/ " target="_blank ">
+                                <div class="follow__item list--item ">
+                                    <i class="follow__item-icon fab fa-linkedin "></i>
+                                    <span class="follow__item-text ">Linkedin</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__contact-item footer__download ">
+                        <div class="download__text list--title ">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</div>
+                        <div class="list--nowrap ">
+                            <!-- <div class="download__qr download__qr--background "></div> -->
+                            <div class="download__list ">
+                                <a href="https://shopee.vn/web " target="_blank ">
+                                    <div class="download__item ">
+                                        <img src="../assets/img/appstore.png " alt=" " class="download__item-img ">
+                                    </div>
+                                </a>
+                                <a href="https://shopee.vn/web " target="_blank ">
+                                    <div class="download__item ">
+                                        <img src="../assets/img/ggplay.png " alt=" " class="download__item-img ">
+                                    </div>
+                                </a>
+                                <a href="https://shopee.vn/web " target="_blank ">
+                                    <div class="download__item ">
+                                        <img src="../assets/img/appgallery.png " alt=" " class="download__item-img ">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid ">
+                <hr class="line-sperate ">
+            </div>
+            <div class="grid ">
+                <div class="list-col right-nation ">
+                    <div class="right ">
+                        © 2021 Shopee. Tất cả các quyền được bảo lưu.
+                    </div>
+                    <div class="nation-list list--wrap ">
+                        <div class="nation-list__title ">Quốc gia & Khu vực:</div>
+                        <div class="nation-item "><a href=" ">Singapore</a></div>
+                        <div class="nation-item "><a href=" ">Indonesia</a></div>
+                        <div class="nation-item "><a href=" ">Đài Loan</a></div>
+                        <div class="nation-item "><a href=" ">Thái Lan</a></div>
+                        <div class="nation-item "><a href=" ">Malaysia</a></div>
+                        <div class="nation-item "><a href=" ">Việt Nam</a></div>
+                        <div class="nation-item "><a href=" ">Philippines</a></div>
+                        <div class="nation-item "><a href=" ">Brazil</a></div>
+                        <div class="nation-item "><a href=" ">México</a></div>
+                        <div class="nation-item "><a href=" ">Colombia</a></div>
+                        <div class="nation-item "><a href=" ">Chile</a></div>
+                        <div class="nation-item "><a href=" ">Poland</a></div>
+                        <div class="nation-item "><a href=" ">Spain</a></div>
+                    </div>
+                </div>
+                <div class="policy-list list--wrap ">
+                    <div class="policy-item "><a href="https://shopee.vn/legaldoc/privacy " target="_blank ">CHÍNH SÁCH BẢO MẬT</a></div>
+                    <div class="policy-item policy-item--sperate "><a href="https://shopee.vn/docs/170 " target="_blank ">QUY CHẾ HOẠT ĐỘNG</a></div>
+                    <div class="policy-item policy-item--sperate "><a href="https://shopee.vn/legaldoc/shipping " target="_blank ">CHÍNH SÁCH VẬN CHUYỂN</a></div>
+                    <div class="policy-item policy-item--sperate "><a href="https://shopee.vn/docs/3111 " target="_blank ">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a></div>
+                </div>
+                <div class="certification ">
+                    <div class="certification-list list--wrap ">
+                        <a href="http://online.gov.vn/Home/WebDetails/18367 " target="_blank " class="certification-link ">
+                            <div class="certification-item certification-item--background background--bocongthuong "></div>
+                        </a>
+                        <a href="http://online.gov.vn/Home/AppDetails/29 " target="_blank " class="certification-link ">
+                            <div class="certification-item certification-item--background background--bocongthuong "></div>
+                        </a>
+                        <a href="https://shopee.vn/docs/170 " target="_blank " class="certification-link ">
+                            <div class="certification-item certification-item--background background--fingerprint "></div>
+                        </a>
+                    </div>
+                    <div class="certification-label align-center footer-text--low ">Công ty TNHH Shopee</div>
+                </div>
+                <div class="address align-center footer-text--low footer--spacing ">
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn
+                </div>
+                <div class="responsible align-center footer-text--low footer--spacing ">
+                    Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)
+                </div>
+                <div class="business-code align-center footer-text--low footer--spacing ">
+                    Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015
+                </div>
+                <div class="copyright align-center footer-text--low footer--spacing ">
+                    © 2015 - Bản quyền thuộc về Công ty TNHH Shopee
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function ChangeTypePass() {
+            var inputPass = document.getElementById('password');
+            var hideBtn = document.getElementById('hide');
+            var displayBtn = document.getElementById('display');
+            if (inputPass.attributes['type'].value == 'password') {
+                inputPass.setAttribute("type", "text");
+                hideBtn.style.display = "none";
+                displayBtn.style.display = "unset";
+            } else {
+                inputPass.setAttribute("type", "password");
+                hideBtn.style.display = "unset";
+                displayBtn.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
