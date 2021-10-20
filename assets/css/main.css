@@ -15,7 +15,7 @@
 .header__navbar {
     display: flex;
     justify-content: space-between;
-    margin: 0 -8px;
+    margin: 0 -8px 5px;
 }
 
 .navbar__list {
