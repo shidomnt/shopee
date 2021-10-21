@@ -146,8 +146,7 @@
 }
 
 .popout-box {
-    width: 40rem;
-    height: 36rem;
+    width: 38rem;
     position: absolute;
     top: 150%;
     right: 0;
@@ -162,12 +161,90 @@
     z-index: 10;
 }
 
+.popout-box--empty {
+    height: 36rem;
+}
+
+.popout-box--empty .when-ful {
+    display: none;
+}
+
+.popout-box--ful {}
+
+.popout-box--ful .popout-box__content {
+    max-height: 35.5rem;
+    flex-flow: column nowrap;
+    justify-content: unset;
+    align-items: unset;
+}
+
+.popout-box--ful .when-empty {
+    display: none;
+}
+
+.popout-box__header {
+    display: flex;
+    height: 4rem;
+}
+
 .popout-box__content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+
+.reset-a {
+    color: var(--text-color);
+    text-decoration: none;
+    height: inherit;
+}
+
+.box-header {
+    opacity: 0.3 !important;
+    background-color: var(--white-color);
+    justify-content: flex-start !important;
+    margin-left: 10px;
+}
+
+.messagebox--padding {
+    padding: 6px 10px;
+}
+
+.message--size {
+    width: 100%;
+    height: 71px;
+}
+
+.message-box {
+    height: inherit;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.message-box--hover:hover {
+    background-color: #F8F8F8;
+}
+
+.message-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.message-text__title {
+    margin-bottom: 2px;
+}
+
+.message-text {
+    padding: 0 5px;
+}
+
+.message-text__desc {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    text-align: justify;
 }
 
 .popout-box__image {
@@ -180,11 +257,12 @@
 
 .popout-box__footer {
     display: flex;
+    height: 4rem;
 }
 
 .popout-box__footer-button {
     flex: 1;
-    min-height: 4rem;
+    /* min-height: 4rem; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +270,7 @@
     background-color: #e8e8e891;
 }
 
-.popout-box__footer-button:hover {
+.popout-box__footer-button--hover:hover {
     color: red;
     background-color: #e8e8e8;
 }
@@ -650,7 +728,7 @@
 
 .product-item {
     width: calc(100%/5);
-    min-height: 330px;
+    height: 330px;
     overflow: hidden;
     border-radius: 2px;
     font-size: 1.1rem;
@@ -743,6 +821,10 @@
     cursor: pointer;
 }
 
+.status-favorite__btn:last-child {
+    color: red;
+}
+
 .status-favorite__btn--visible {
     display: unset;
 }
@@ -750,6 +832,14 @@
 .product-item__status-rate {
     display: flex;
     align-items: center;
+}
+
+.up .js-status-favorite__btn-rateup {
+    display: unset;
+}
+
+.up .js-status-favorite__btn-nonrate {
+    display: none;
 }
 
 .status-icon__item {

@@ -62,18 +62,102 @@
                     </ul>
                     <ul class="navbar__list">
                         <li class="navbar__item">
-                            <span href="" class="navbar__item-link navbar__item-link-popout-box">
+                            <span href="" class="navbar__item-link navbar__item-link-popout-box" onclick="change()">
                                 <span class="navbar__item-title--hover">
                                     <i class="header__navbar-icon far fa-bell"></i> Thông Báo
                                 </span>
-                            <div class="popout-box popout-box--empty">
+                            <div id="box-noti" class="popout-box popout-box--empty">
+                                <div class="popout-box__header">
+                                    <div class="popout-box__footer-button when-ful box-header">
+                                        Thông báo mới nhận
+                                    </div>
+                                </div>
                                 <div class="popout-box__content">
-                                    <img src="./assets/img/notification.png" alt="" class="popout-box__image">
-                                    <p class="popout-box__desc">Đăng nhập để xem Thông báo</p>
+                                    <img src="./assets/img/notification.png" alt="" class="popout-box__image when-empty">
+                                    <p class="popout-box__desc when-empty">Đăng nhập để xem Thông báo</p>
+                                    <div class="when-ful message--size message-box--hover">
+                                        <a href="" class="reset-a">
+                                            <div class="message-box message-box--hover messagebox--padding messagebox--margin">
+                                                <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
+                                                <div class="message-text">
+                                                    <div class="message-text__title">
+                                                        Sở hữu bộ voucher chất chỉ từ 1K
+                                                    </div>
+                                                    <div class="message-text__desc">
+                                                        Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="when-ful message--size message-box--hover">
+                                        <a href="" class="reset-a">
+                                            <div class="message-box message-box--hover messagebox--padding messagebox--margin">
+                                                <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
+                                                <div class="message-text">
+                                                    <div class="message-text__title">
+                                                        Sở hữu bộ voucher chất chỉ từ 1K
+                                                    </div>
+                                                    <div class="message-text__desc">
+                                                        Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="when-ful message--size message-box--hover">
+                                        <a href="" class="reset-a">
+                                            <div class="message-box message-box--hover messagebox--padding messagebox--margin">
+                                                <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
+                                                <div class="message-text">
+                                                    <div class="message-text__title">
+                                                        Sở hữu bộ voucher chất chỉ từ 1K
+                                                    </div>
+                                                    <div class="message-text__desc">
+                                                        Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="when-ful message--size message-box--hover">
+                                    <a href="" class="reset-a">
+                                        <div class="message-box message-box--hover messagebox--padding messagebox--margin">
+                                            <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
+                                            <div class="message-text">
+                                                <div class="message-text__title">
+                                                    Sở hữu bộ voucher chất chỉ từ 1K
+                                                </div>
+                                                <div class="message-text__desc">
+                                                    Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="when-ful message--size message-box--hover">
+                                    <a href="" class="reset-a">
+                                        <div class="message-box message-box--hover messagebox--padding messagebox--margin">
+                                            <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
+                                            <div class="message-text">
+                                                <div class="message-text__title">
+                                                    Sở hữu bộ voucher chất chỉ từ 1K
+                                                </div>
+                                                <div class="message-text__desc">
+                                                    Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="popout-box__footer">
-                                    <div class="popout-box__footer-button"><a href="./register/">Đăng Ký</a></div>
-                                    <div class="popout-box__footer-button"><a href="./login/">Đăng Nhập</a></div>
+                                    <div class="popout-box__footer-button popout-box__footer-button--hover when-empty"><a href="./register/">Đăng Ký</a></div>
+                                    <div class="popout-box__footer-button popout-box__footer-button--hover when-empty"><a href="./login/">Đăng Nhập</a></div>
+                                    <div class="popout-box__footer-button when-ful">
+                                        <a href="">Xem tất cả</a>
+                                    </div>
+
                                 </div>
                             </div>
                             </span>
@@ -112,16 +196,16 @@
                                 <input type="text" name="" id="" placeholder="Tìm trong Shop này" class="search-bar__input">
                             </form>
                             <div class="search-bar__select ">
-                                <span>Trong Shop này</span>
+                                <span id="search-area">Trong Shop này</span>
                                 <i class="fas fa-caret-down"></i>
                                 <div class="search-bar__options">
-                                    <div class="option__detail">
+                                    <div class="option__detail" onclick="this_shop()">
                                         Trong Shop Này
-                                        <i class="option__detail-icon fas fa-check"></i>
+                                        <i id="this-shop" class="option__detail-icon  fas fa-check" style="display: unset;"></i>
                                     </div>
-                                    <div class="option__detail">
+                                    <div class="option__detail" onclick="shopee()">
                                         Trong Shoppe
-                                        <i class="option__detail-icon fas fa-check"></i>
+                                        <i id="shopee" class="option__detail-icon fas fa-check" style="display: none;"></i>
                                     </div>
                                 </div>
                             </div>
@@ -260,8 +344,8 @@
                                         <div class="product-item__status product-item-atriibute--space">
                                             <div class="product-item__status-favorite">
                                                 <span href="" class="status-favorite__btn-list">
-                                                <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
                                             </span>
                                             </div>
                                             <div class="product-item__status-rate">
@@ -1161,20 +1245,49 @@
         }
 
         //Favorite Button
-        const FavBtns = document.querySelectorAll('.js-status-favorite__btn');
-        const FavBtnNonRate = document.querySelector('.js-status-favorite__btn-nonrate');
-        const FavBtnRateUp = document.querySelector('.js-status-favorite__btn-rateup');
+        const FavBtns = document.querySelectorAll('.status-favorite__btn-list');
+        const FavBtnNonRate = document.querySelectorAll('.js-status-favorite__btn-nonrate');
+        const FavBtnRateUp = document.querySelectorAll('.js-status-favorite__btn-rateup');
 
         for (const FavBtn of FavBtns) {
-            FavBtn.addEventListener('click', function() {
-                if (FavBtnNonRate.classList.contains('status-favorite__btn--visible')) {
-                    FavBtnNonRate.classList.remove('status-favorite__btn--visible');
-                    FavBtnRateUp.classList.add('status-favorite__btn--visible');
+            FavBtn.addEventListener('click', function(even) {
+                if (FavBtn.classList.contains('up')) {
+                    FavBtn.classList.remove('up');
                 } else {
-                    FavBtnRateUp.classList.remove('status-favorite__btn--visible');
-                    FavBtnNonRate.classList.add('status-favorite__btn--visible');
+                    FavBtn.classList.add('up');
                 }
+                even.preventDefault();
             })
+        }
+
+        //Change Noti
+
+        function change() {
+            const boxNoti = document.getElementById('box-noti');
+            if (boxNoti.classList.contains('popout-box--empty')) {
+                boxNoti.classList.remove('popout-box--empty');
+                boxNoti.classList.add('popout-box--ful');
+            } else {
+                boxNoti.classList.remove('popout-box--ful');
+                boxNoti.classList.add('popout-box--empty');
+            }
+        }
+
+        //Change Search
+        const searchArea = document.getElementById('search-area');
+        const this_shopCheck = document.getElementById('this-shop');
+        const shopeeCheck = document.getElementById('shopee');
+
+        function this_shop() {
+            searchArea.innerText = "Trong Shop này";
+            this_shopCheck.style.display = "unset";
+            shopeeCheck.style.display = "none";
+        }
+
+        function shopee() {
+            searchArea.innerText = "Trong Shopee";
+            shopeeCheck.style.display = "unset";
+            this_shopCheck.style.display = "none";
         }
     </script>
 </body>
