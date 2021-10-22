@@ -653,6 +653,7 @@
 .sortbar-left__select {
     min-width: 200px;
     position: relative;
+    z-index: 2;
 }
 
 .select__label {
@@ -662,11 +663,6 @@
 
 .sortbar-left__select:hover .select__options {
     display: block;
-}
-
-.select__options::before {
-    display: block;
-    content: "";
 }
 
 .select__options {
