@@ -152,13 +152,12 @@
     border-radius: 2px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transform-origin: calc(100% - 20px) 20px;
-    animation: revscale ease-in 0.2s forwards;
+    animation: scale ease-in 0.2s forwards;
     z-index: 10;
 }
 
 .navbar__item-link-popout-box:hover .popout-box {
     display: flex;
-    animation: scale ease-in 0.2s forwards;
 }
 
 .popout-box--empty {
