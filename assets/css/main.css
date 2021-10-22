@@ -648,6 +648,7 @@
 .sortbar-item--active {
     background-color: red;
     color: var(--white-color);
+    opacity: 1;
 }
 
 .sortbar-left__select {
@@ -661,8 +662,10 @@
     justify-content: space-between
 }
 
+.sortbar-left__select:hover,
 .sortbar-left__select:hover .select__options {
     display: block;
+    opacity: 1;
 }
 
 .sortbar-left__select::after {
