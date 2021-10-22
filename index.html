@@ -300,7 +300,7 @@
                                 <div class="sortbar-item js-sort-btn">Mới Nhất</div>
                                 <div class="sortbar-item js-sort-btn">Bán Chạy</div>
                                 <div class="sortbar-item sortbar-left__select">
-                                    <span class="select__label">
+                                    <span id="sort-price" class="select__label">
                                     Giá
                                     <i class="fas fa-angle-down"></i>
                                 </span>
@@ -938,6 +938,17 @@
             searchArea.innerText = "Trong Shopee";
             shopeeCheck.style.display = "unset";
             this_shopCheck.style.display = "none";
+        }
+
+        //Change Price Sort
+        const sortPriceOpts = document.querySelectorAll('.select__option');
+        const sortPriceBtn = document.getElementById('sort-price');
+
+        for (const sortPriceOpt of sortPriceOpts) {
+            sortPriceOpt.addEventListener('click', function() {
+                var text = sortPriceOpt.innerText;
+                sortPriceBtn.innerText = text;
+            })
         }
     </script>
 </body>
