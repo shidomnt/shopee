@@ -21,9 +21,16 @@
     color: var(--text-color);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 20px;
 }
+
+.form__header-text {
+    line-height: 60px;
+}
+
+
+/* Login QR */
 
 .small-box {
     width: 60%;
@@ -78,6 +85,9 @@
 .box__imgqr {
     width: 100%;
 }
+
+
+/* Form */
 
 .form__input,
 .form__submit {
