@@ -44,11 +44,6 @@
     font-weight: 450;
 }
 
-
-/* .navbar__item--separate {
-    border-right: 2px solid #F96C5C;
-} */
-
 .navbar__item--separate::after {
     width: 2px;
     height: 16px;
@@ -59,6 +54,12 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: #F96C5C;
+}
+
+.navbar__item-login-link.navbar__item--separate::after {
+    background-color: #fa8f82;
+    width: 1px;
+    height: 13px;
 }
 
 .navbar__item-link {
