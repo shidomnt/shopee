@@ -88,15 +88,14 @@
 }
 
 .link__qrcode {
-    width: 18rem;
+    width: 180px;
     position: absolute;
     top: 150%;
-    left: 0;
+    left: 7px;
     display: none;
     flex-flow: column;
     background-color: var(--white-color);
     background-clip: content-box;
-    transform: translateX(0.7rem);
     animation: appear ease-in 0.2s;
     border-radius: 2px;
     z-index: 10;
@@ -126,21 +125,21 @@
     position: absolute;
     bottom: -10px;
     left: 0;
-    height: 1.5rem;
+    height: 15px;
 }
 
 .popout-box::before {
     display: block;
     content: "";
-    border: 1.4rem solid transparent;
-    border-bottom: 1rem solid var(--white-color);
+    border: 14px solid transparent;
+    border-bottom: 10px solid var(--white-color);
     position: absolute;
-    top: -2.4rem;
-    right: 3.6rem;
+    top: -24px;
+    right: 36px;
 }
 
 .popout-box {
-    width: 38rem;
+    width: 380px;
     position: absolute;
     top: 150%;
     right: 0;
@@ -153,6 +152,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transform-origin: calc(100% - 20px) 20px;
     animation: scale ease-in 0.2s forwards;
+    /* will-change: opacity transform; */
     z-index: 10;
 }
 
@@ -161,7 +161,7 @@
 }
 
 .popout-box--empty {
-    height: 36rem;
+    height: 360px;
 }
 
 .popout-box--empty .when-ful {
@@ -169,7 +169,7 @@
 }
 
 .popout-box--ful .popout-box__content {
-    max-height: 35.5rem;
+    max-height: 355px;
     flex-flow: column nowrap;
     justify-content: unset;
     align-items: unset;
@@ -181,7 +181,7 @@
 
 .popout-box__header {
     display: flex;
-    height: 4rem;
+    height: 40px;
 }
 
 .popout-box__content {
@@ -254,12 +254,12 @@
 
 .popout-box__footer {
     display: flex;
-    height: 4rem;
+    height: 40px;
 }
 
 .popout-box__footer-button {
     flex: 1;
-    /* min-height: 4rem; */
+    /* min-height: 40px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,7 +338,7 @@
     content: "";
     position: absolute;
     width: 1px;
-    height: 2.4rem;
+    height: 24px;
     background-color: rgba(0, 0, 0, 0.09);
     left: 0;
 }
@@ -365,11 +365,11 @@
 }
 
 .search-bar__options {
-    min-width: 15rem;
+    min-width: 150px;
     position: absolute;
     top: 100%;
     right: 0;
-    padding-top: 0.8rem;
+    padding-top: 8px;
     z-index: 10;
     display: none;
 }
@@ -380,7 +380,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--white-color);
-    padding: 0 1.2rem;
+    padding: 0 12px;
     opacity: 1;
     border-radius: 2px;
 }
@@ -446,14 +446,14 @@
 }
 
 .search__cart-popout-box::before {
-    border: 1.4rem solid transparent;
-    border-bottom: 0.8rem solid var(--white-color);
-    right: 1.4rem;
-    top: -2.1rem;
+    border: 14px solid transparent;
+    border-bottom: 8px solid var(--white-color);
+    right: 14px;
+    top: -21px;
 }
 
 .search__cart-popout-box {
-    height: 28rem;
+    height: 280px;
 }
 
 .search__cart-content:hover .popout-box {
