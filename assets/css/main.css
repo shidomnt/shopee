@@ -101,6 +101,7 @@
     animation: appear ease-in 0.2s;
     border-radius: 2px;
     z-index: 10;
+    overflow: hidden;
 }
 
 .link__devices {
