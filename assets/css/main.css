@@ -550,7 +550,7 @@
 }
 
 .container__return-link {
-    display: block;
+    /* display: block; */
     color: var(--black-color);
     text-decoration: none;
 }
@@ -578,7 +578,7 @@
     padding-top: 100%;
     background: url(../img/shop-logo.png) no-repeat;
     background-size: 100%;
-    filter: blur(1.4px) grayscale(30%);
+    filter: brightness(50%);
 }
 
 .sidebar__logo-content {
