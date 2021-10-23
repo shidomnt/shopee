@@ -268,7 +268,7 @@
 }
 
 .popout-box__footer-button--hover:hover {
-    color: red;
+    color: var(--primary-color);
     background-color: #e8e8e8;
 }
 
@@ -387,7 +387,7 @@
 
 .option__detail-icon {
     font-size: 1.2rem;
-    color: red;
+    color: var(--primary-color);
 }
 
 .option__detail:hover {
@@ -396,9 +396,9 @@
 
 .search-bar__btn {
     color: var(--white-color);
-    background-color: #fd5837;
+    background-color: var(--primary-color);
     border: none;
-    border-radius: inherit;
+    border-radius: 2px;
     font-size: 1.6rem;
     padding-left: 24px;
     padding-right: 24px;
@@ -537,7 +537,7 @@
     left: 50%;
     color: var(--white-color);
     transform: translate(-50%, 180%);
-    background-color: red;
+    background-color: var(--primary-color);
     border-radius: 2px;
     text-align: center;
     text-decoration: none;
@@ -570,7 +570,7 @@
 
 .category-item:nth-child(2) {
     text-transform: none !important;
-    color: red;
+    color: var(--primary-color);
 }
 
 .category-item:last-child {
@@ -645,7 +645,7 @@
 }
 
 .sortbar-item--active {
-    background-color: red;
+    background-color: var(--primary-color);
     color: var(--white-color);
     opacity: 1;
 }
@@ -691,7 +691,7 @@
 }
 
 .select__option:hover {
-    color: red
+    color: var(--primary-color);
 }
 
 
@@ -703,7 +703,7 @@
 }
 
 .thispage {
-    color: rgb(253, 22, 22);
+    color: var(--primary-color);
     font-weight: 700;
 }
 
@@ -802,7 +802,7 @@
 }
 
 .fav-label {
-    background-color: #F25322;
+    background-color: var(--primary-color);
     height: 16px;
     width: 65px;
     border-radius: 2px;
@@ -834,7 +834,7 @@
 }
 
 .sell-rate_numb {
-    color: #F25322;
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -859,7 +859,7 @@
 
 .product-item__deal {
     width: fit-content;
-    color: red;
+    color: var(--primary-color);
     padding: 0px 6px;
     border: 1px solid red;
     font-size: 0.9rem;
@@ -885,7 +885,7 @@
 }
 
 .product-item__cost--active {
-    color: #fa503d;
+    color: var(--primary-color);
 }
 
 .product-item__status {
@@ -903,7 +903,7 @@
 }
 
 .status-favorite__btn:last-child {
-    color: red;
+    color: var(--primary-color);
 }
 
 .status-favorite__btn--visible {
