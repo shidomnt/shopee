@@ -40,7 +40,7 @@
     border: none;
 }
 
-.form__submit:disabled {
+.form__submit--disabled {
     opacity: 0.7;
     cursor: not-allowed;
 }
