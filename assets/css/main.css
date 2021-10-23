@@ -814,7 +814,7 @@
 .product-item {
     width: 192.6px;
     height: 330px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 2px;
     font-size: 1.1rem;
     color: var(--text-color);
