@@ -27,7 +27,7 @@
 
 .navbar__item,
 .navbar__item-link {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: inherit;
     text-decoration: none;
     font-weight: 400;
@@ -292,6 +292,8 @@
 
 .search__logo {
     margin-right: 50px;
+    position: relative;
+    top: -7px;
 }
 
 .search__logo-svg {
@@ -341,7 +343,6 @@
 }
 
 .search-bar__select {
-    min-width: 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -357,12 +358,17 @@
     opacity: 0.9;
 }
 
+.search-bar__select-icon {
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
 .search-bar__select:hover .search-bar__options {
     display: unset;
 }
 
 .search-bar__options {
-    min-width: 150px;
+    width: 105%;
     position: absolute;
     top: 100%;
     right: 0;
@@ -385,6 +391,7 @@
 .option__detail-icon {
     font-size: 1.2rem;
     color: var(--primary-color);
+    /* margin-left: 16px; */
 }
 
 .option__detail:hover {
@@ -397,8 +404,8 @@
     border: none;
     border-radius: 2px;
     font-size: 1.6rem;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 22px;
+    padding-right: 22px;
     cursor: pointer;
 }
 
@@ -681,6 +688,7 @@
     left: 0;
     background-color: var(--white-color);
     display: none;
+    animation: appear ease-in 0.15s;
 }
 
 .select__option {
