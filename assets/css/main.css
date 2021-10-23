@@ -895,6 +895,22 @@
     font-size: 1.6rem;
 }
 
+.product-item__cost-list {
+    display: flex;
+    flex: 1;
+}
+
+.product-item__original-cost {
+    width: 60px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.product-item__sale-cost {
+    flex: 1;
+}
+
 .product-item__cost--disable {
     color: var(--black-color);
     opacity: 0.7;
@@ -903,6 +919,11 @@
 
 .product-item__cost--active {
     color: var(--primary-color);
+}
+
+.product-item__cost-icon {
+    font-size: 1.2rem;
+    line-height: 18px;
 }
 
 .product-item__status {
