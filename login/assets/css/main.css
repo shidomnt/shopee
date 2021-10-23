@@ -20,19 +20,16 @@
 }
 
 .header__logo {
-    width: 152px;
-    height: 50px;
-}
-
-.header__logo--background {
-    background: url(../../../assets/img/shopee-logo-31408.png) no-repeat;
-    background-size: 100%;
+    width: 122px;
+    height: 39px;
+    margin-right: 12px;
 }
 
 .header__title {
     align-self: flex-end;
     font-size: 2.4rem;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
+    color: var(--text-color);
 }
 
 .header__link {
