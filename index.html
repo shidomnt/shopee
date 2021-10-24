@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Shopee</title>
 </head>
@@ -61,11 +62,11 @@
                     </ul>
                     <ul class="navbar__list">
                         <li class="navbar__item">
-                            <span href="" class="navbar__item-link navbar__item-link-popout-box" onclick="">
+                            <span href="" class="navbar__item-link navbar__item-link-popout-box navbar__item-link-popout-box--hover" onclick="">
                                 <span class="navbar__item-title--hover">
                                     <i class="header__navbar-icon far fa-bell"></i> Thông Báo
                                 </span>
-                            <div id="box-noti" class="popout-box popout-box--empty">
+                            <div id="box-noti" class="popout-box popout-box--ful popout-box__bridge">
                                 <div class="popout-box__header">
                                     <div class="popout-box__footer-button when-ful box-header">
                                         Thông báo mới nhận
@@ -168,7 +169,7 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="navbar__item navbar__item--bold navbar__item--separate navbar__item-login-link ">
+                        <!-- <li class="navbar__item navbar__item--bold navbar__item--separate navbar__item-login-link ">
                             <a href="./register/" class="navbar__item-link">
                                 <span class="navbar__item-title--hover">
                                     Đăng Ký
@@ -181,6 +182,22 @@
                                     Đăng Nhập
                                 </span>
                             </a>
+                        </li> -->
+                        <li class="navbar__item logged user-info user-info--hover">
+                            <div class="user-info__avt">
+                                <img src="https://lh3.googleusercontent.com/a-/AOh14GhCM2m7HfOI52IaJaQGgn6LV6-acVMIxgkCtZOz=s317-p-rw-no" alt="" class="user-avt-img">
+                            </div>
+                            <div class="user-info__name">
+                                <span class="user-info__name-text">Trần Quang Hà</span>
+                            </div>
+                            <div class="user-info__options popout-box popout-box__bridge">
+                                <div class="user-info__option"><a href="" class="reset-a">Tài Khoản Của Tôi</a></div>
+                                <div class="user-info__option"><a href="" class="reset-a">Đơn Mua</a></div>
+                                <div class="user-info__option user-info__option--logout">
+                                    <a href="" class="reset-a">Đăng Xuất</a>
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -243,9 +260,9 @@
                         </div>
                     </div>
                     <div class="search__cart">
-                        <div class="search__cart-content">
+                        <div class="search__cart-content search__cart-content--hover">
                             <a href=""><i class="search__cart-icon fas fa-shopping-cart"></i></a>
-                            <div class="search__cart-popout-box popout-box">
+                            <div class="search__cart-popout-box popout-box popout-box__bridge">
                                 <div class="popout-box__content">
                                     <img src="./assets/img/muasam.png" alt="" class="popout-box__image">
                                     <p class="popout-box__desc">Đăng nhập để xem giỏ hàng</p>
@@ -258,636 +275,642 @@
         </header>
         <div class="container">
             <div class="grid">
-                <!-- Return Bar -->
-                <div class="container__return-bar">
-                    <a href="" class="container__return-link">
-                        <i class="fas fa-angle-left"></i> Trở Lại Trang Của Shop
-                    </a>
+                <div class="grid__row">
+                    <!-- Return Bar -->
+                    <div class="container__return-bar">
+                        <a href="" class="container__return-link">
+                            <i class="fas fa-angle-left"></i> Trở Lại Trang Của Shop
+                        </a>
+                    </div>
                 </div>
-                <!-- Container Content -->
-                <div class="container__content">
-                    <!-- Side Bar -->
-                    <aside class="container__sidebar">
-                        <div class="sidebar__logo">
-                            <div class="sidebar__logo--background"></div>
-                            <div class="sidebar__logo-content">
-                                <div class="sidebar__logo-contain">
-                                    <a href="">
-                                        <img src="./assets/img/shop-logo.png" alt="" class="sidebar__logo-img">
-                                        <span class="sidebar__logo-like">Yêu Thích+</span>
+                <div class="grid__row">
+                    <div class="grid__col-2">
+                        <!-- Side Bar -->
+                        <aside class="container__sidebar">
+                            <div class="sidebar__logo">
+                                <div class="sidebar__logo--background"></div>
+                                <div class="sidebar__logo-content">
+                                    <div class="sidebar__logo-contain">
+                                        <a href="">
+                                            <img src="./assets/img/shop-logo.png" alt="" class="sidebar__logo-img">
+                                            <span class="sidebar__logo-like">Yêu Thích+</span>
+                                        </a>
+                                    </div>
+                                    <div class="sidebar__logo-shopname sidebar__logo--font-size">
+                                        <p>ohuiminisample</p>
+                                    </div>
+                                    <div class="sidebar__logo-status sidebar__logo--font-size">
+                                        Online 13 phút trước
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar__category sidebar__category--font-size">
+                                <div class="category-item category__title">
+                                    <i class="category__title-icon fas fa-list-ul"></i>
+                                    <span class="category__title-text">Danh mục Shop</span>
+                                </div>
+                                <div class="category-item category-item--active category-item--noborder ">Sản phẩm</div>
+                                <div class="category-item">Trang điểm</div>
+                                <div class="category-item">Sữa rửa mặt</div>
+                                <div class="category-item">Cpn Rx</div>
+                                <div class="category-item">Ohui</div>
+                                <div class="category-item">Whoo</div>
+                                <div class="category-item">Shu:M37</div>
+                                <div class="category-item">ShuWhaSoo</div>
+                                <div class="category-item">Hera</div>
+                                <div class="category-item">Saga-Amore-Vdl</div>
+                                <div class="category-item">Serum các loại</div>
+                                <div class="category-item">Top bán chạy nhất</div>
+                                <div class="category-item">Shu:M37 xanh cho da dầu mụn</div>
+                                <div class="category-item">Losec Summa Shu:M37</div>
+                                <div class="category-item">Giảm giá</div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="grid__col-10">
+                        <!-- Products -->
+                        <div class="container__products">
+                            <!-- Sort Bar -->
+                            <div class="sortbar">
+                                <div class="sortbar-left sortbar--display">
+                                    <div class="sortbar__label sortbar-left__label">Sắp xếp theo</div>
+                                    <div class="sortbar-item js-sort-btn sortbar-item--active">Phổ Biến</div>
+                                    <div class="sortbar-item js-sort-btn">Mới Nhất</div>
+                                    <div class="sortbar-item js-sort-btn">Bán Chạy</div>
+                                    <div class="sortbar-item sortbar-left__select">
+                                        <span class="select__label">
+                                        <span id="sort-price" >Giá</span>
+                                        <i class="fas fa-angle-down"></i>
+                                        </span>
+                                        <div class="select__options">
+                                            <div class="select__option">Giá: Thấp đến Cao</div>
+                                            <div class="select__option">Giá: Cao đến Thấp</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sortbar-right sortbar--display">
+                                    <div class="sortbar__label"><span class="thispage">1</span>/<span class="sumpage">14</span> </div>
+                                    <div class="sortbar-right__btns">
+                                        <div class="sortbar-right__btn sortbar-item sortbar-right__btn--disable">
+                                            <i class="fas fa-angle-left sortbar-right__btn--disable"></i>
+                                        </div>
+                                        <div class="sortbar-right__btn sortbar-item">
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- List Product -->
+                            <div class="container__product-list">
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <div class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000.000</div>
+                                                    <div class="product-item__sale-cost product-item__cost--active product-item__cost--unit">30.900.000</div>
+                                                </div>
+                                                <i class="product-item__cost-icon fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
                                     </a>
                                 </div>
-                                <div class="sidebar__logo-shopname sidebar__logo--font-size">
-                                    <p>ohuiminisample</p>
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
+                                                    <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
+                                                </div>
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="sidebar__logo-status sidebar__logo--font-size">
-                                    Online 13 phút trước
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
+                                                    <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
+                                                </div>
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
+                                                    <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
+                                                </div>
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
+                                                    <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
+                                                </div>
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
+                                                    <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
+                                                </div>
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
+                                                    <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
+                                                </div>
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
+                                                    <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
+                                                </div>
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
+                                                    <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
+                                                </div>
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="" class="product-item__link">
+                                        <div class="product-item__img">
+                                            <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
+                                            <div class="product-item__img-background background--freeship"></div>
+                                            <div class="product-item__img-background fav-label">
+                                                <div class="background--fav"></div>
+                                            </div>
+                                            <div class="product-item__img-background sell-rate">
+                                                <div class="sell-rate_numb">35%</div>
+                                                <div style="color: var(--white-color);">GIẢM</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__content">
+                                            <div class="product-item__name product-item-atriibute--space">
+                                                [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
+                                            </div>
+                                            <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
+                                            <div class="product-item__cost product-item-atriibute--space">
+                                                <div class="product-item__cost-list">
+                                                    <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
+                                                    <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
+                                                </div>
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="product-item__status product-item-atriibute--space">
+                                                <div class="product-item__status-favorite">
+                                                    <span href="" class="status-favorite__btn-list">
+                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
+                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
+                                            </span>
+                                                </div>
+                                                <div class="product-item__status-rate">
+                                                    <span class="status-rate__icon-list">
+                                                <i class="status-icon__item far fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                                <i class="status-icon__item fas fa-star"></i>
+                                            </span>
+                                                    <span class="product-item__status-sell">
+                                                Đã bán 16,2k
+                                            </span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__location product-item-atriibute--space">
+                                                Quảng Ninh
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="sidebar__category sidebar__category--font-size">
-                            <div class="category-item category__title">
-                                Danh mục shop
-                            </div>
-                            <div class="category-item category-item--noborder">Sản phẩm</div>
-                            <div class="category-item"><a class="category-item-link" href="">Sản phẩm</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Sữa rửa mặt</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Cpn Rx</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Ohui</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Whoo</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Shu:M37</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">ShuWhaSoo</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Hera</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Saga-Amore-Vdl</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Serum các loại</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Top bán chạy nhất</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Shu:M37 xanh cho da dầu mụn</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Losec Summa Shu:M37</a></div>
-                            <div class="category-item"><a class="category-item-link" href="">Giảm giá</a></div>
-                        </div>
-                    </aside>
-                    <!-- Products -->
-                    <div class="container__products">
-                        <!-- Sort Bar -->
-                        <div class="sortbar">
-                            <div class="sortbar-left sortbar--display">
-                                <div class="sortbar__label sortbar-left__label">Sắp xếp theo</div>
-                                <div class="sortbar-item js-sort-btn sortbar-item--active">Phổ Biến</div>
-                                <div class="sortbar-item js-sort-btn">Mới Nhất</div>
-                                <div class="sortbar-item js-sort-btn">Bán Chạy</div>
-                                <div class="sortbar-item sortbar-left__select">
-                                    <span class="select__label">
-                                        <span id="sort-price" >Giá</span>
-                                    <i class="fas fa-angle-down"></i>
-                                    </span>
-                                    <div class="select__options">
-                                        <div class="select__option">Giá: Thấp đến Cao</div>
-                                        <div class="select__option">Giá: Cao đến Thấp</div>
-                                    </div>
+                            <!-- Switch Page -->
+                            <div class="container__switch-bar">
+                                <div class="container__switch-btn sortbar-item">
+                                    <a href=""><i class="fas fa-angle-left"></i></a>
                                 </div>
-                            </div>
-                            <div class="sortbar-right sortbar--display">
-                                <div class="sortbar__label"><span class="thispage">1</span>/<span class="sumpage">14</span> </div>
-                                <div class="sortbar-right__btns">
-                                    <div class="sortbar-right__btn sortbar-item sortbar-right__btn--disable">
-                                        <i class="fas fa-angle-left sortbar-right__btn--disable"></i>
-                                    </div>
-                                    <div class="sortbar-right__btn sortbar-item">
-                                        <i class="fas fa-angle-right"></i>
-                                    </div>
+                                <div class="container__switch-btn sortbar-item">
+                                    <a href="">
+                                        <span class="page_number">1</span>
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- List Product -->
-                        <div class="container__product-list">
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <div class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000.000.000</div>
-                                                <div class="product-item__sale-cost product-item__cost--active product-item__cost--unit">300.900.000</div>
-                                            </div>
-                                            <i class="product-item__cost-icon fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
-                                                <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
-                                            </div>
-                                            <i class="fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
-                                                <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
-                                            </div>
-                                            <i class="fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
-                                                <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
-                                            </div>
-                                            <i class="fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
-                                                <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
-                                            </div>
-                                            <i class="fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
-                                                <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
-                                            </div>
-                                            <i class="fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
-                                                <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
-                                            </div>
-                                            <i class="fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
-                                                <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
-                                            </div>
-                                            <i class="fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
-                                                <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
-                                            </div>
-                                            <i class="fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <img src="./assets/img/product-img.png" alt="" class="product-item__overlay">
-                                        <div class="product-item__img-background background--freeship"></div>
-                                        <div class="product-item__img-background fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="product-item__img-background sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div style="color: var(--white-color);">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-atriibute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-atriibute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-atriibute--space">
-                                            <div class="product-item__cost-list">
-                                                <span class="product-item__original-cost product-item__cost--disable product-item__cost--unit">7.000</span>
-                                                <span class="product-item__sale-cost product-item__cost--active product-item__cost--unit">3.900</span>
-                                            </div>
-                                            <i class="fas fa-shipping-fast"></i>
-                                        </div>
-                                        <div class="product-item__status product-item-atriibute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span href="" class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="product-item__status-rate">
-                                                <span class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </span>
-                                                <span class="product-item__status-sell">
-                                                Đã bán 16,2k
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__location product-item-atriibute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Switch Page -->
-                        <div class="container__switch-bar">
-                            <div class="container__switch-btn sortbar-item">
-                                <a href=""><i class="fas fa-angle-left"></i></a>
-                            </div>
-                            <div class="container__switch-btn sortbar-item">
-                                <a href="">
-                                    <span class="page_number">1</span>
-                                </a>
-                            </div>
-                            <div class="container__switch-btn sortbar-item">
-                                <a href="">
-                                    <span class="page_number">2</span>
-                                </a>
-                            </div>
-                            <div class="container__switch-btn sortbar-item">
-                                <a href="">
-                                    <span class="page_number">3</span>
-                                </a>
-                            </div>
-                            <div class="container__switch-btn sortbar-item">
-                                <a href="">
-                                    <span class="page_number">4</span>
-                                </a>
-                            </div>
-                            <div class="container__switch-btn sortbar-item">
-                                <a href="">
-                                    <span class="page_number">5</span>
-                                </a>
-                            </div>
-                            <div class="container__switch-btn sortbar-item">
-                                <a href="">
-                                    <span class="page_number">...</span>
-                                </a>
-                            </div>
-                            <div class="container__switch-btn sortbar-item">
-                                <a href=""><i class="fas fa-angle-right"></i></a>
+                                <div class="container__switch-btn sortbar-item">
+                                    <a href="">
+                                        <span class="page_number">2</span>
+                                    </a>
+                                </div>
+                                <div class="container__switch-btn sortbar-item">
+                                    <a href="">
+                                        <span class="page_number">3</span>
+                                    </a>
+                                </div>
+                                <div class="container__switch-btn sortbar-item">
+                                    <a href="">
+                                        <span class="page_number">4</span>
+                                    </a>
+                                </div>
+                                <div class="container__switch-btn sortbar-item">
+                                    <a href="">
+                                        <span class="page_number">5</span>
+                                    </a>
+                                </div>
+                                <div class="container__switch-btn sortbar-item">
+                                    <a href="">
+                                        <span class="page_number">...</span>
+                                    </a>
+                                </div>
+                                <div class="container__switch-btn sortbar-item">
+                                    <a href=""><i class="fas fa-angle-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>

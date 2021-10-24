@@ -6,7 +6,6 @@
     --header-height: 119px;
     --navbar-height: 38px;
     --searchbar-height: calc(var(--header-height) - var(--navbar-height));
-    --sidebar-width: 187px;
 }
 
 * {
@@ -20,6 +19,9 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+
+/* Responsive */
 
 .grid {
     width: 1200px;
@@ -35,6 +37,17 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
+
+.grid__col-2 {
+    width: 16.6667%;
+}
+
+.grid__col-10 {
+    width: 83.3332%;
+}
+
+
+/* Animation */
 
 @keyframes appear {
     from {
