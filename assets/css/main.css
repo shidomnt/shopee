@@ -973,8 +973,10 @@
     font-weight: bold;
 }
 
-.product-item__overlay {
-    width: 100%;
+.product-item-img {
+    background: url(../img/product-img.png) no-repeat;
+    background-size: 100%;
+    padding-top: 100%;
 }
 
 .product-item-atriibute--space {
@@ -988,8 +990,16 @@
 }
 
 .product-item__name {
-    max-height: 28px;
+    line-height: 1.8rem;
+    height: 3.6rem;
+    font-size: 1.2rem;
+    display: block;
     overflow: hidden;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .product-item__deal {
@@ -1009,24 +1019,34 @@
 
 .product-item__cost {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     font-size: 1.6rem;
-}
-
-.product-item__cost-list {
-    display: flex;
-    flex: 1;
+    align-items: center;
+    overflow: hidden;
 }
 
 .product-item__original-cost {
-    width: 50px;
+    flex: 1;
+    margin-right: 5px;
+    font-size: 1.2rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
 .product-item__sale-cost {
-    flex: 1;
+    max-width: 100%;
+    text-align: right;
+    margin-right: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-item__cost-icon {
+    font-size: 1.2rem;
+    line-height: 18px;
 }
 
 .product-item__cost--disable {
@@ -1037,11 +1057,6 @@
 
 .product-item__cost--active {
     color: var(--primary-color);
-}
-
-.product-item__cost-icon {
-    font-size: 1.2rem;
-    line-height: 18px;
 }
 
 .product-item__status {
