@@ -853,7 +853,7 @@
     background-color: var(--white-color);
 }
 
-.sortbar-right__btn a {
+.sortbar-right__btn-icon {
     margin: auto;
 }
 
@@ -1047,6 +1047,11 @@
 .product-item__cost-icon {
     font-size: 1.2rem;
     line-height: 18px;
+    display: none;
+}
+
+.product-item__cost-icon.free-ship {
+    display: unset;
 }
 
 .product-item__cost--disable {
