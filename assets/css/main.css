@@ -979,7 +979,7 @@
     padding-top: 100%;
 }
 
-.product-item-atriibute--space {
+.product-item-attribute--space {
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -1067,6 +1067,7 @@
 .product-item__status {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .product-item__status-favorite {
@@ -1084,11 +1085,6 @@
 
 .status-favorite__btn--visible {
     display: unset;
-}
-
-.product-item__status-rate {
-    display: flex;
-    align-items: center;
 }
 
 .up .js-status-favorite__btn-rateup {
