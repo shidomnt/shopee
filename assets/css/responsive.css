@@ -1,0 +1,46 @@
+/* PC */
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .product-item {
+        max-width: calc(100%/4 - 10px);
+    }
+}
+
+
+/* Tablet and Mobile */
+
+@media (max-width: 1023px) {
+    .sortbar-right {
+        display: none;
+    }
+    .container__sidebar {
+        display: none;
+    }
+    .header__navbar {
+        display: none;
+    }
+    .search-nav {
+        display: none;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width:740px) and (max-width: 1023px) {
+    .product-item {
+        max-width: calc(100%/3 - 10px);
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .product-item {
+        max-width: calc(100%/2 - 10px);
+    }
+    .sortbar-left__label {
+        display: none;
+    }
+}
