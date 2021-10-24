@@ -791,21 +791,14 @@
     align-items: center;
     font-size: 1.5rem;
     cursor: pointer;
-    position: relative;
-    right: 0;
-    transition: 0.2s;
 }
 
 .category-item:hover {
-    right: -5px;
+    color: var(--primary-color);
 }
 
 .category__title {
     align-items: unset;
-}
-
-.category__title-icon {
-    margin-right: 5px;
 }
 
 .category__title-text {
@@ -818,15 +811,6 @@
 
 .category-item--active {
     color: var(--primary-color);
-}
-
-.category-item--active::before {
-    display: block;
-    content: "";
-    border: 3px solid transparent;
-    border-left-color: var(--primary-color);
-    position: absolute;
-    left: -12px;
 }
 
 .category-item:last-child {
