@@ -28,6 +28,13 @@
     .header__search {
         height: unset;
     }
+    .navbar__list-left .navbar__item:nth-child(1),
+    .navbar__list-left .navbar__item:nth-child(2) {
+        display: none;
+    }
+    .navbar__item-link-qrcode:hover .link__qrcode {
+        display: none;
+    }
 }
 
 
@@ -107,6 +114,7 @@
         width: 25%;
         padding: 10px;
         text-align: center;
+        font-size: 1.2rem;
     }
     .sortbar-left {
         flex: 1;

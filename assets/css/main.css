@@ -25,6 +25,10 @@
     display: flex;
 }
 
+.navbar__list-right {
+    justify-content: flex-end;
+}
+
 .navbar__item,
 .navbar__item-link {
     font-size: 1.3rem;
@@ -161,7 +165,7 @@
 .link__qrcode {
     width: 180px;
     position: absolute;
-    top: 150%;
+    top: 100%;
     left: 7px;
     display: none;
     flex-flow: column;
