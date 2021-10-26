@@ -238,4 +238,7 @@
         display: block;
         transform: scale(1);
     }
+    .switch-bar {
+        zoom: 0.5;
+    }
 }
