@@ -82,11 +82,18 @@
     }
     .search__cart-popout-box {
         width: 90vw;
+        max-height: 50vh;
         right: -35px;
         transform-origin: calc(100% - 45px) 0;
     }
-    .search__cart-content--hover:hover~.overlay {
+    .search__cart-content--hover:hover .popout-box {
+        transform: scale(0);
+    }
+    #cart-check:checked~.overlay {
         display: unset;
+    }
+    #cart-check:checked~.popout-box {
+        transform: unset;
     }
     .user--mobile {
         display: unset;
