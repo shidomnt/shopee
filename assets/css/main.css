@@ -20,9 +20,9 @@
 }
 
 .navbar__list {
+    height: var(--navbar-height);
     list-style-type: none;
     display: flex;
-    padding-left: 0;
 }
 
 .navbar__item,
@@ -80,6 +80,7 @@
 
 .user-info__options.popout-box {
     width: 130%;
+    top: 100%;
 }
 
 .user-info__option:first-child,
@@ -350,20 +351,37 @@
 }
 
 
+/* Menu Mobile */
+
+.menu--mobile {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
+.menu-mobile-container {
+    transform: scale(0, 1);
+    transform-origin: 0% 50%;
+}
+
+.user-mobile-container {
+    transform: scale(0, 1);
+    transform-origin: 100% 50%;
+}
+
+
 /* Search Bar */
 
 .header__search {
     height: var(--searchbar-height);
-    display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .search__logo {
-    margin-right: 32px;
-    position: relative;
-    top: -7px;
+    overflow: hidden;
 }
 
 .search__logo-svg {
@@ -372,7 +390,7 @@
 }
 
 .search__content {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     flex-flow: column wrap;
 }
@@ -555,7 +573,7 @@
 /* Cart */
 
 .search__cart {
-    width: 148px;
+    /* width: 148px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -573,6 +591,7 @@
 
 .search__cart-icon {
     position: relative;
+    cursor: pointer;
 }
 
 .search__cart-number-item {
@@ -656,7 +675,7 @@
 }
 
 .cart-item__text {
-    width: 70%;
+    width: 65%;
     margin-left: 10px;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -691,6 +710,10 @@
     cursor: pointer;
 }
 
+.user--mobile {
+    display: none;
+}
+
 
 /* Container */
 
@@ -704,7 +727,7 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 300;
-    padding: 20px 0;
+    margin: 20px 0;
 }
 
 .container__return-link {
@@ -823,7 +846,7 @@
     color: var(--primary-color);
 }
 
-.category-item:last-child {
+.sidebar__category .category-item:last-child {
     margin-bottom: 40px;
 }
 
@@ -857,10 +880,6 @@
 
 /* Sort Bar Left */
 
-.sortbar-left {
-    margin-left: 6px;
-}
-
 .sortbar__label {
     opacity: 0.7;
 }
@@ -886,6 +905,11 @@
     min-width: 200px;
     position: relative;
     z-index: 1;
+}
+
+.sortbar-left__select--mobile {
+    display: none;
+    flex: 1;
 }
 
 .select__label {

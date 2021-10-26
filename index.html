@@ -8,9 +8,10 @@
     <link rel="icon" href="./assets/img/shoppe--logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Shopee</title>
 </head>
@@ -18,165 +19,212 @@
 <body>
     <div class="main">
         <header class="header">
-            <div class="grid">
+            <div class="grid wide">
                 <!-- Nav Bar -->
-                <nav class="header__navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__item navbar__item--separate">
-                            <a href="" class="navbar__item-link">
-                                <span class="navbar__item-title--hover">
-                                    Kênh Người Bán
-                                </span>
-                            </a>
-                        </li>
-                        <li class="navbar__item navbar__item--separate">
-                            <a href="" class="navbar__item-link">
-                                <span class="navbar__item-title--hover">
-                                    Trở thành Người bán Shopee
-                                </span>
-                            </a>
-                        </li>
-                        <li class="navbar__item navbar__item--separate">
-                            <a href="https://shopee.vn/web" target="_blank" class="navbar__item-link navbar__item-link-qrcode">
-                                <span class="navbar__item-title--hover">
-                                    Tải ứng dụng
-                                </span>
-                                <div class="link__qrcode">
-                                    <img src="./assets/img/qrcode.png" alt="" class="link__qrcode-img">
-                                    <div class="link__devices">
-                                        <img src="./assets/img/appstore.png" alt="" class="link__device-img">
-                                        <img src="./assets/img/ggplay.png" alt="" class="link__device-img">
-                                        <img src="./assets/img/appgallery.png" alt="" class="link__device-img">
+                <nav class="header__navbar row">
+                    <div class="col l-7 m-0 c-0">
+                        <ul class="navbar__list">
+                            <li class=" navbar__item navbar__item--separate ">
+                                <a href=" " class="navbar__item-link ">
+                                    <span class="navbar__item-title--hover ">
+                                        Kênh Người Bán
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar__item--separate ">
+                                <a href=" " class="navbar__item-link ">
+                                    <span class="navbar__item-title--hover ">
+                                        Trở thành Người bán Shopee
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar__item--separate ">
+                                <a href="https://shopee.vn/web " target="_blank " class="navbar__item-link navbar__item-link-qrcode ">
+                                    <span class="navbar__item-title--hover ">
+                                        Tải ứng dụng
+                                    </span>
+                                    <div class="link__qrcode ">
+                                        <img src="./assets/img/qrcode.png " alt=" " class="link__qrcode-img ">
+                                        <div class="link__devices ">
+                                            <img src="./assets/img/appstore.png " alt=" " class="link__device-img ">
+                                            <img src="./assets/img/ggplay.png " alt=" " class="link__device-img ">
+                                            <img src="./assets/img/appgallery.png " alt=" " class="link__device-img ">
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="navbar__item">
-                            Kết nối
-                            <a href="https://www.facebook.com/ShopeeVN" target="_blank" class="navbar__item-link">
-                                <i class="header__navbar-icon fab fa-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/Shopee_VN/" target="_blank" class="navbar__item-link">
-                                <i class="header__navbar-icon fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <span class="navbar__item-link navbar__item-link-popout-box navbar__item-link-popout-box--hover" onclick="">
-                                <span class="navbar__item-title--hover">
-                                    <i class="header__navbar-icon far fa-bell"></i> Thông Báo
-                                </span>
-                            <div id="box-noti" class="popout-box popout-box--ful popout-box__bridge">
-                                <div class="popout-box__header">
-                                    <div class="popout-box__footer-button when-ful box-header">
-                                        Thông báo mới nhận
+                                </a>
+                            </li>
+                            <li class="navbar__item ">
+                                Kết nối
+                                <a href="https://www.facebook.com/ShopeeVN " target="_blank " class="navbar__item-link ">
+                                    <i class="header__navbar-icon fab fa-facebook "></i>
+                                </a>
+                                <a href="https://www.instagram.com/Shopee_VN/ " target="_blank " class="navbar__item-link ">
+                                    <i class="header__navbar-icon fab fa-instagram "></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-5 m-12 c-0">
+                        <ul class="navbar__list" style="justify-content: flex-end;">
+                            <li class="navbar__item">
+                                <span class="navbar__item-link navbar__item-link-popout-box navbar__item-link-popout-box--hover" onclick="">
+                                    <span class="navbar__item-title--hover">
+                                        <i class="header__navbar-icon far fa-bell"></i> Thông Báo
+                                    </span>
+                                <div id="box-noti" class="popout-box popout-box--ful popout-box__bridge">
+                                    <div class="popout-box__header">
+                                        <div class="popout-box__footer-button when-ful box-header">
+                                            Thông báo mới nhận
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="popout-box__content">
-                                    <img src="./assets/img/notification.png" alt="" class="popout-box__image when-empty">
-                                    <p class="popout-box__desc when-empty">Đăng nhập để xem Thông báo</p>
-                                    <div class="when-ful message--size message-box--hover">
-                                        <a href="" class="reset-a">
-                                            <div class="message-box message-box--hover messagebox--padding messagebox--margin">
-                                                <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
-                                                <div class="message-text">
-                                                    <div class="message-text__title">
-                                                        Sở hữu bộ voucher chất chỉ từ 1K
-                                                    </div>
-                                                    <div class="message-text__desc">
-                                                        Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="when-ful message--size message-box--hover">
-                                        <a href="" class="reset-a">
-                                            <div class="message-box message-box--hover messagebox--padding">
-                                                <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
-                                                <div class="message-text">
-                                                    <div class="message-text__title">
-                                                        Sở hữu bộ voucher chất chỉ từ 1K
-                                                    </div>
-                                                    <div class="message-text__desc">
-                                                        Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                    <div class="popout-box__content">
+                                        <img src="./assets/img/notification.png" alt="" class="popout-box__image when-empty">
+                                        <p class="popout-box__desc when-empty">Đăng nhập để xem Thông báo</p>
+                                        <div class="when-ful message--size message-box--hover">
+                                            <a href="" class="reset-a">
+                                                <div class="message-box message-box--hover messagebox--padding messagebox--margin">
+                                                    <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
+                                                    <div class="message-text">
+                                                        <div class="message-text__title">
+                                                            Sở hữu bộ voucher chất chỉ từ 1K
+                                                        </div>
+                                                        <div class="message-text__desc">
+                                                            Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="when-ful message--size message-box--hover">
-                                        <a href="" class="reset-a">
-                                            <div class="message-box message-box--hover messagebox--padding messagebox--margin">
-                                                <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
-                                                <div class="message-text">
-                                                    <div class="message-text__title">
-                                                        Sở hữu bộ voucher chất chỉ từ 1K
-                                                    </div>
-                                                    <div class="message-text__desc">
-                                                        Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                            </a>
+                                        </div>
+                                        <div class="when-ful message--size message-box--hover">
+                                            <a href="" class="reset-a">
+                                                <div class="message-box message-box--hover messagebox--padding">
+                                                    <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
+                                                    <div class="message-text">
+                                                        <div class="message-text__title">
+                                                            Sở hữu bộ voucher chất chỉ từ 1K
+                                                        </div>
+                                                        <div class="message-text__desc">
+                                                            Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </a>
+                                            </a>
+                                        </div>
+                                        <div class="when-ful message--size message-box--hover">
+                                            <a href="" class="reset-a">
+                                                <div class="message-box message-box--hover messagebox--padding messagebox--margin">
+                                                    <img src="./assets/img/gói-siêu-voucher-12K.jpg" alt="" class="message-icon">
+                                                    <div class="message-text">
+                                                        <div class="message-text__title">
+                                                            Sở hữu bộ voucher chất chỉ từ 1K
+                                                        </div>
+                                                        <div class="message-text__desc">
+                                                            Sở hữu bộ voucher chất chỉ từ 1K Sở hữu bộ voucher chất chỉ từ 1K
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="popout-box__footer">
-                                    <div class="popout-box__footer-button popout-box__footer-button--hover when-empty"><a href="./register/">Đăng Ký</a></div>
-                                    <div class="popout-box__footer-button popout-box__footer-button--hover when-empty"><a href="./login/">Đăng Nhập</a></div>
-                                    <div class="popout-box__footer-button when-ful">
-                                        <a href="">Xem tất cả</a>
-                                    </div>
+                                    <div class="popout-box__footer">
+                                        <div class="popout-box__footer-button popout-box__footer-button--hover when-empty"><a href="./register/">Đăng Ký</a></div>
+                                        <div class="popout-box__footer-button popout-box__footer-button--hover when-empty"><a href="./login/">Đăng Nhập</a></div>
+                                        <div class="popout-box__footer-button when-ful">
+                                            <a href="">Xem tất cả</a>
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            </span>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__item-link">
-                                <span class="navbar__item-title--hover">
-                                    <i class="header__navbar-icon far fa-question-circle"></i> Hỗ Trợ
                                 </span>
-                            </a>
-                        </li>
-                        <!-- Not Login -->
-                        <li class="navbar__item navbar__item--bold navbar__item--separate navbar__item-login-link not-login">
-                            <a href="./register/" class="navbar__item-link">
-                                <span class="navbar__item-title--hover">
-                                    Đăng Ký
-                                </span>
-                            </a>
-                        </li>
-                        <li class="navbar__item navbar__item--bold not-login">
-                            <a href="./login/" class="navbar__item-link">
-                                <span class="navbar__item-title--hover">
-                                    Đăng Nhập
-                                </span>
-                            </a>
-                        </li>
-                        <!-- Logged -->
-                        <li class="navbar__item user-info user-info--hover logged">
-                            <div class="user-info__avt">
-                                <img src="https://lh3.googleusercontent.com/a-/AOh14GhCM2m7HfOI52IaJaQGgn6LV6-acVMIxgkCtZOz=s317-p-rw-no" alt="" class="user-avt-img">
-                            </div>
-                            <div class="user-info__name">
-                                <span class="user-info__name-text">Trần Quang Hà</span>
-                            </div>
-                            <div class="user-info__options popout-box popout-box__bridge">
-                                <div class="user-info__option"><a href="" class="reset-a">Tài Khoản Của Tôi</a></div>
-                                <div class="user-info__option"><a href="" class="reset-a">Đơn Mua</a></div>
-                                <div class="user-info__option user-info__option--logout" onclick="logout()">
-                                    <a href="" class="reset-a">Đăng Xuất</a>
-                                    <i class="fas fa-sign-out-alt"></i>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__item-link">
+                                    <span class="navbar__item-title--hover">
+                                        <i class="header__navbar-icon far fa-question-circle"></i> Hỗ Trợ
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- Not Login -->
+                            <li class="navbar__item navbar__item--bold navbar__item--separate navbar__item-login-link not-login">
+                                <a href="./register/" class="navbar__item-link">
+                                    <span class="navbar__item-title--hover">
+                                        Đăng Ký
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar__item--bold not-login">
+                                <a href="./login/" class="navbar__item-link">
+                                    <span class="navbar__item-title--hover">
+                                        Đăng Nhập
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- Logged -->
+                            <li class="navbar__item user-info user-info--hover logged">
+                                <div class="user-info__avt">
+                                    <img src="https://lh3.googleusercontent.com/a-/AOh14GhCM2m7HfOI52IaJaQGgn6LV6-acVMIxgkCtZOz=s317-p-rw-no" alt="" class="user-avt-img">
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                                <div class="user-info__name">
+                                    <span class="user-info__name-text">Trần Quang Hà</span>
+                                </div>
+                                <div class="user-info__options popout-box popout-box__bridge">
+                                    <div class="user-info__option"><a href="" class="reset-a">Tài Khoản Của Tôi</a></div>
+                                    <div class="user-info__option"><a href="" class="reset-a">Đơn Mua</a></div>
+                                    <div class="user-info__option user-info__option--logout" onclick="logout()">
+                                        <a href="" class="reset-a">Đăng Xuất</a>
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <!-- Search Bar -->
-                <div class="header__search">
-                    <div class="search__logo">
+                <div class="header__search row">
+                    <div class="menu--mobile col l-0 m-0 c-3">
+                        <div class="menu__btn">
+                            <label for="menu-mobi-check">
+                                <i class="menu__btn-icon fas fa-bars"></i>
+                            </label>
+                            <input type="checkbox" hidden name="" id="menu-mobi-check">
+                            <label for="menu-mobi-check" class="overlay"></label>
+                            <div class="menu-mobile-container">
+                                <div class="menu-mobile__header">
+                                    <a href="">Tất Cả Sản Phẩm</a>
+                                </div>
+                                <ul class="menu__category-list">
+                                    <li class="menu__category-item">
+                                        <a href="" class="menu__category-link">Ohui</a>
+                                    </li>
+                                    <li class="menu__category-item">
+                                        <a href="" class="menu__category-link">Whoo</a>
+                                    </li>
+                                    <li class="menu__category-item">
+                                        <a href="" class="menu__category-link">Su:m37</a>
+                                    </li>
+                                    <li class="menu__category-item">
+                                        <a href="" class="menu__category-link">Set mini</a>
+                                    </li>
+                                    <li class="menu__category-item">
+                                        <a href="" class="menu__category-link">Thực phẩm chức năng</a>
+                                    </li>
+                                    <li class="menu__category-item">
+                                        <a href="" class="menu__category-link">Dịch vụ</a>
+                                    </li>
+                                    <li class="menu__category-item">
+                                        <a href="" class="menu__category-link">Tin tức</a>
+                                    </li>
+                                    <li class="menu__category-item">
+                                        <a href="" class="menu__category-link">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <label for="search-bar-check" class="search__btn">
+                            <i class="search__btn-icon fas fa-search"></i>
+                        </label>
+                    </div>
+                    <div class="search__logo col l-2 m-1 c-6">
                         <a href="./">
                             <svg viewBox="0 0 192 65" class="search__logo-svg">
                                 <g fill-rule="evenodd">
@@ -187,143 +235,174 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="search__content">
-                        <div class="search-bar">
-                            <form action="" method="get" class="search__content-form">
-                                <div class="search-bar__input-wrap">
-                                    <input type="text" name="" placeholder="Tìm trong Shop này" class="search-bar__input">
-                                    <div class="search-bar__history">
-                                        <ul class="search-bar__history-list">
-                                            <h3 class="search-bar__history-header box-header">Lịch Sử Tìm Kiếm</h3>
-                                            <li class="search-bar__history-item"><a href="" class="search-bar__history-item-link">Sữa rửa mặt</a></li>
-                                            <li class="search-bar__history-item"><a href="" class="search-bar__history-item-link">Kem dưỡng da</a></li>
-                                            <li class="search-bar__history-item"><a href="" class="search-bar__history-item-link">Son</a></li>
-                                            <li class="search-bar__history-item"><a href="" class="search-bar__history-item-link">Phấn</a></li>
+                    <div class="col l-10 m-11 c-3">
+                        <div class="row">
+                            <div class="search__content col l-10 m-11 c-0">
+                                <input type="checkbox" hidden name="" id="search-bar-check">
+                                <div class="search-bar">
+                                    <form action="" method="get" class="search__content-form">
+                                        <div class="search-bar__input-wrap">
+                                            <input type="text" name="" placeholder="Tìm trong Shop này" class="search-bar__input">
+                                            <div class="search-bar__history">
+                                                <ul class="search-bar__history-list">
+                                                    <h3 class="search-bar__history-header box-header">Lịch Sử Tìm Kiếm</h3>
+                                                    <li class="search-bar__history-item"><a href="" class="search-bar__history-item-link">Sữa rửa mặt</a></li>
+                                                    <li class="search-bar__history-item"><a href="" class="search-bar__history-item-link">Kem dưỡng da</a></li>
+                                                    <li class="search-bar__history-item"><a href="" class="search-bar__history-item-link">Son</a></li>
+                                                    <li class="search-bar__history-item"><a href="" class="search-bar__history-item-link">Phấn</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="search-bar__select ">
+                                            <span id="search-area">Trong Shop này</span>
+                                            <i class="search-bar__select-icon fas fa-chevron-down"></i>
+                                            <div class="search-bar__options">
+                                                <div class="option__detail" onclick="this_shop()">
+                                                    <span class="option__detail-text">Trong Shop Này</span>
+                                                    <i id="this-shop" class="option__detail-icon  fas fa-check" style="display: unset;"></i>
+                                                </div>
+                                                <div class="option__detail" onclick="shopee()">
+                                                    <span class="option__detail-text">Trong Shoppe</span>
+                                                    <i id="shopee" class="option__detail-icon fas fa-check" style="display: none;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="search-bar__btn ">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="search-nav">
+                                    <a href="" class="search-nav__item">Áo Khoác</a>
+                                    <a href="" class="search-nav__item">Váy</a>
+                                    <a href="" class="search-nav__item">Quần</a>
+                                    <a href="" class="search-nav__item">Túi Xách Nữ</a>
+                                    <a href="" class="search-nav__item">Dép</a>
+                                    <a href="" class="search-nav__item">Chân Váy</a>
+                                    <a href="" class="search-nav__item">Dép Nữ</a>
+                                    <a href="" class="search-nav__item">Tai Nghe</a>
+                                </div>
+                            </div>
+                            <div class="search__cart col l-2 m-1 c-12">
+                                <div class="search__cart-content search__cart-content--hover">
+                                    <span>
+                                        <i class="search__cart-icon fas fa-shopping-cart">
+                                        <div class="search__cart-number-item">5</div>
+                                        </i>
+                                    </span>
+                                    <div class="search__cart-popout-box popout-box popout-box__bridge">
+                                        <!-- Not Login -->
+                                        <!-- <img src="./assets/img/muasam.png" alt="" class="popout-box__image">
+                                        <p class="popout-box__desc">Đăng nhập để xem giỏ hàng</p> -->
+                                        <!-- Logged -->
+                                        <div class="cart-header box-header">Sản Phẩm Mới Thêm</div>
+                                        <div class="cart-content popout-box__content">
+                                            <div class="cart-item">
+                                                <a href="" class="reset-a">
+                                                    <div class="cart-item-box">
+                                                        <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
+                                                        <div class="cart-item__text">
+                                                            [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
+                                                        </div>
+                                                        <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="cart-item">
+                                                <a href="" class="reset-a">
+                                                    <div class="cart-item-box">
+                                                        <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
+                                                        <div class="cart-item__text">
+                                                            [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
+                                                        </div>
+                                                        <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="cart-item">
+                                                <a href="" class="reset-a">
+                                                    <div class="cart-item-box">
+                                                        <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
+                                                        <div class="cart-item__text">
+                                                            [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
+                                                        </div>
+                                                        <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="cart-item">
+                                                <a href="" class="reset-a">
+                                                    <div class="cart-item-box">
+                                                        <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
+                                                        <div class="cart-item__text">
+                                                            [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
+                                                        </div>
+                                                        <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="cart-item">
+                                                <a href="" class="reset-a">
+                                                    <div class="cart-item-box">
+                                                        <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
+                                                        <div class="cart-item__text">
+                                                            [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
+                                                        </div>
+                                                        <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="cart-footer popout-box__footer">
+                                            <div class="cart-footer__desc">1 Thêm Hàng Vào Giỏ</div>
+                                            <div class="car-footer_btn-view-cart"><a href="" class="reset-a">Xem Giỏ Hàng</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="test" class="overlay"></label>
+                                <div class="user--mobile">
+                                    <label for="user-mobi-check">
+                                        <i class="user-icon far fa-user-circle"></i>
+                                    </label>
+                                    <input type="checkbox" hidden name="" id="user-mobi-check">
+                                    <label for="user-mobi-check" class="overlay"></label>
+                                    <div class="user-mobile-container">
+                                        <div class="user-mobile__header">
+                                            <a href=""><img src="https://lh3.googleusercontent.com/a-/AOh14GhCM2m7HfOI52IaJaQGgn6LV6-acVMIxgkCtZOz=s317-p-rw-no" alt="" class="user-avatar"></a>
+                                        </div>
+                                        <div class="user-btns">
+                                            <a href="" class="user-btn user-link">Tin Tức</a>
+                                            <a href="" class="user-btn user-link user-btn--active">Đăng Xuất</a>
+                                        </div>
+                                        <ul class="func-list">
+                                            <li class="func-item">
+                                                <a href="" class="user-link">Tin Tức</a>
+                                            </li>
+                                            <li class="func-item">
+                                                <a href="" class="user-link">Giỏ Hàng</a>
+                                            </li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="search-bar__select ">
-                                    <span id="search-area">Trong Shop này</span>
-                                    <i class="search-bar__select-icon fas fa-chevron-down"></i>
-                                    <div class="search-bar__options">
-                                        <div class="option__detail" onclick="this_shop()">
-                                            <span class="option__detail-text">Trong Shop Này</span>
-                                            <i id="this-shop" class="option__detail-icon  fas fa-check" style="display: unset;"></i>
-                                        </div>
-                                        <div class="option__detail" onclick="shopee()">
-                                            <span class="option__detail-text">Trong Shoppe</span>
-                                            <i id="shopee" class="option__detail-icon fas fa-check" style="display: none;"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="search-bar__btn ">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </form>
-                        </div>
-                        <div class="search-nav">
-                            <a href="" class="search-nav__item">Áo Khoác</a>
-                            <a href="" class="search-nav__item">Váy</a>
-                            <a href="" class="search-nav__item">Quần</a>
-                            <a href="" class="search-nav__item">Túi Xách Nữ</a>
-                            <a href="" class="search-nav__item">Dép</a>
-                            <a href="" class="search-nav__item">Chân Váy</a>
-                            <a href="" class="search-nav__item">Dép Nữ</a>
-                            <a href="" class="search-nav__item">Tai Nghe</a>
-                        </div>
-                    </div>
-                    <div class="search__cart">
-                        <div class="search__cart-content search__cart-content--hover">
-                            <a href="">
-                                <i class="search__cart-icon fas fa-shopping-cart">
-                                <div class="search__cart-number-item">5</div>
-                                </i>
-                            </a>
-                            <div class="search__cart-popout-box popout-box popout-box__bridge">
-                                <!-- Not Login -->
-                                <!-- <img src="./assets/img/muasam.png" alt="" class="popout-box__image">
-                                <p class="popout-box__desc">Đăng nhập để xem giỏ hàng</p> -->
-                                <!-- Logged -->
-                                <div class="cart-header box-header">Sản Phẩm Mới Thêm</div>
-                                <div class="cart-content popout-box__content">
-                                    <div class="cart-item">
-                                        <a href="" class="reset-a">
-                                            <div class="cart-item-box">
-                                                <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
-                                                <div class="cart-item__text">
-                                                    [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
-                                                </div>
-                                                <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="cart-item">
-                                        <a href="" class="reset-a">
-                                            <div class="cart-item-box">
-                                                <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
-                                                <div class="cart-item__text">
-                                                    [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
-                                                </div>
-                                                <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="cart-item">
-                                        <a href="" class="reset-a">
-                                            <div class="cart-item-box">
-                                                <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
-                                                <div class="cart-item__text">
-                                                    [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
-                                                </div>
-                                                <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="cart-item">
-                                        <a href="" class="reset-a">
-                                            <div class="cart-item-box">
-                                                <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
-                                                <div class="cart-item__text">
-                                                    [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
-                                                </div>
-                                                <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="cart-item">
-                                        <a href="" class="reset-a">
-                                            <div class="cart-item-box">
-                                                <img src="./assets/img/cart-item.jfif" alt="" class="cart-item__img">
-                                                <div class="cart-item__text">
-                                                    [ZIN XIAOMI] Củ sạc nhanh Quick Charge 3.0, cốc sạc xiaomi zin hãng 5V-3A MYD-08-ES
-                                                </div>
-                                                <div class="cart-item-price"><span class="cost--unit">97.000</span></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cart-footer popout-box__footer">
-                                    <div class="cart-footer__desc">1 Thêm Hàng Vào Giỏ</div>
-                                    <div class="car-footer_btn-view-cart"><a href="" class="reset-a">Xem Giỏ Hàng</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </header>
         <div class="container">
-            <div class="grid">
+            <div class="grid wide">
                 <!-- Return Bar -->
-                <div class="grid__row">
-                    <div class="container__return-bar">
+                <div class="row">
+                    <div class="container__return-bar col l-12 m-12">
                         <a href="" class="container__return-link">
                             <i class="fas fa-angle-left"></i> Trở Lại Trang Của Shop
                         </a>
                     </div>
                 </div>
-                <div class="grid__row">
-                    <div class="grid__col-2-12">
+                <div class="row sm-gutter">
+                    <div class="col l-2 m-0 c-0">
                         <!-- Side Bar -->
                         <aside class="container__sidebar">
                             <div class="sidebar__logo">
@@ -365,7 +444,7 @@
                             </div>
                         </aside>
                     </div>
-                    <div class="grid__col-10-12">
+                    <div class="col l-10 m-12 c-12 sm-gutter">
                         <!-- Sort Bar -->
                         <div class="sortbar">
                             <div class="sortbar-left sortbar--display">
@@ -383,6 +462,12 @@
                                         <div class="select__option">Giá: Cao đến Thấp</div>
                                     </div>
                                 </div>
+                                <div class="sortbar-item sortbar-left__select--mobile">
+                                    <span class="select__label">
+                                        <span id="sort-price" >Giá</span>
+                                    <i class="fas fa-angle-down"></i>
+                                    </span>
+                                </div>
                             </div>
                             <div class="sortbar-right sortbar--display">
                                 <div class="sortbar__label"><span class="thispage">1</span>/<span class="sumpage">14</span> </div>
@@ -397,8 +482,8 @@
                             </div>
                         </div>
                         <!-- List Product -->
-                        <div class="grid__row">
-                            <div class="product-item grid__col-2-10">
+                        <div class="row sm-gutter">
+                            <div class="product-item col l-2-4 m-4 c-6">
                                 <a href="" class="product-item__link">
                                     <div class="product-item__img">
                                         <div class="product-item-img"></div>
@@ -462,7 +547,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="product-item grid__col-2-10">
+                            <div class="product-item col l-2-4 m-4 c-6">
                                 <a href="" class="product-item__link">
                                     <div class="product-item__img">
                                         <div class="product-item-img"></div>
@@ -526,7 +611,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="product-item grid__col-2-10">
+                            <div class="product-item col l-2-4 m-4 c-6">
                                 <a href="" class="product-item__link">
                                     <div class="product-item__img">
                                         <div class="product-item-img"></div>
@@ -590,7 +675,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="product-item grid__col-2-10">
+                            <div class="product-item col l-2-4 m-4 c-6">
                                 <a href="" class="product-item__link">
                                     <div class="product-item__img">
                                         <div class="product-item-img"></div>
@@ -654,7 +739,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="product-item grid__col-2-10">
+                            <div class="product-item col l-2-4 m-4 c-6">
                                 <a href="" class="product-item__link">
                                     <div class="product-item__img">
                                         <div class="product-item-img"></div>
@@ -718,583 +803,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="product-item grid__col-2-10">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <div class="product-item-img"></div>
-                                        <div class="background--freeship"></div>
-                                        <div class="fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div class="sell-rate_text">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-attribute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-attribute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-attribute--space">
-                                            <div class="product-item__original-cost product-item__cost--disable cost--unit">7.000.000</div>
-                                            <div class="product-item__sale-cost product-item__cost--active cost--unit">30.900.000</div>
-                                            <div class="product-item__cost-icon free-ship">
-                                                <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
-                                                    <g fill="none" fill-rule="evenodd" transform="">
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
-                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
-                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
-                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <path
-                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
-                                                            fill="#fff"
-                                                        ></path>
-                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
-                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__status product-item-attribute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </div>
-                                            <div class="product-item__status-sell">Đã bán <span class="product-item__status-sell-qnt">16,5k</span></div>
-                                        </div>
-                                        <div class="product-item__location product-item-attribute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item grid__col-2-10">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <div class="product-item-img"></div>
-                                        <div class="background--freeship"></div>
-                                        <div class="fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div class="sell-rate_text">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-attribute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-attribute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-attribute--space">
-                                            <div class="product-item__original-cost product-item__cost--disable cost--unit">7.000.000</div>
-                                            <div class="product-item__sale-cost product-item__cost--active cost--unit">30.900.000</div>
-                                            <div class="product-item__cost-icon free-ship">
-                                                <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
-                                                    <g fill="none" fill-rule="evenodd" transform="">
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
-                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
-                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
-                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <path
-                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
-                                                            fill="#fff"
-                                                        ></path>
-                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
-                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__status product-item-attribute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </div>
-                                            <div class="product-item__status-sell">Đã bán <span class="product-item__status-sell-qnt">16,5k</span></div>
-                                        </div>
-                                        <div class="product-item__location product-item-attribute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item grid__col-2-10">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <div class="product-item-img"></div>
-                                        <div class="background--freeship"></div>
-                                        <div class="fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div class="sell-rate_text">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-attribute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-attribute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-attribute--space">
-                                            <div class="product-item__original-cost product-item__cost--disable cost--unit">7.000.000</div>
-                                            <div class="product-item__sale-cost product-item__cost--active cost--unit">30.900.000</div>
-                                            <div class="product-item__cost-icon free-ship">
-                                                <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
-                                                    <g fill="none" fill-rule="evenodd" transform="">
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
-                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
-                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
-                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <path
-                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
-                                                            fill="#fff"
-                                                        ></path>
-                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
-                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__status product-item-attribute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </div>
-                                            <div class="product-item__status-sell">Đã bán <span class="product-item__status-sell-qnt">16,5k</span></div>
-                                        </div>
-                                        <div class="product-item__location product-item-attribute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item grid__col-2-10">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <div class="product-item-img"></div>
-                                        <div class="background--freeship"></div>
-                                        <div class="fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div class="sell-rate_text">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-attribute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-attribute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-attribute--space">
-                                            <div class="product-item__original-cost product-item__cost--disable cost--unit">7.000.000</div>
-                                            <div class="product-item__sale-cost product-item__cost--active cost--unit">30.900.000</div>
-                                            <div class="product-item__cost-icon free-ship">
-                                                <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
-                                                    <g fill="none" fill-rule="evenodd" transform="">
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
-                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
-                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
-                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <path
-                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
-                                                            fill="#fff"
-                                                        ></path>
-                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
-                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__status product-item-attribute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </div>
-                                            <div class="product-item__status-sell">Đã bán <span class="product-item__status-sell-qnt">16,5k</span></div>
-                                        </div>
-                                        <div class="product-item__location product-item-attribute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item grid__col-2-10">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <div class="product-item-img"></div>
-                                        <div class="background--freeship"></div>
-                                        <div class="fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div class="sell-rate_text">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-attribute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-attribute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-attribute--space">
-                                            <div class="product-item__original-cost product-item__cost--disable cost--unit">7.000.000</div>
-                                            <div class="product-item__sale-cost product-item__cost--active cost--unit">30.900.000</div>
-                                            <div class="product-item__cost-icon free-ship">
-                                                <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
-                                                    <g fill="none" fill-rule="evenodd" transform="">
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
-                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
-                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
-                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <path
-                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
-                                                            fill="#fff"
-                                                        ></path>
-                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
-                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__status product-item-attribute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </div>
-                                            <div class="product-item__status-sell">Đã bán <span class="product-item__status-sell-qnt">16,5k</span></div>
-                                        </div>
-                                        <div class="product-item__location product-item-attribute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item grid__col-2-10">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <div class="product-item-img"></div>
-                                        <div class="background--freeship"></div>
-                                        <div class="fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div class="sell-rate_text">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-attribute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-attribute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-attribute--space">
-                                            <div class="product-item__original-cost product-item__cost--disable cost--unit">7.000.000</div>
-                                            <div class="product-item__sale-cost product-item__cost--active cost--unit">30.900.000</div>
-                                            <div class="product-item__cost-icon free-ship">
-                                                <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
-                                                    <g fill="none" fill-rule="evenodd" transform="">
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
-                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
-                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
-                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <path
-                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
-                                                            fill="#fff"
-                                                        ></path>
-                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
-                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__status product-item-attribute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </div>
-                                            <div class="product-item__status-sell">Đã bán <span class="product-item__status-sell-qnt">16,5k</span></div>
-                                        </div>
-                                        <div class="product-item__location product-item-attribute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item grid__col-2-10">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <div class="product-item-img"></div>
-                                        <div class="background--freeship"></div>
-                                        <div class="fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div class="sell-rate_text">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-attribute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-attribute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-attribute--space">
-                                            <div class="product-item__original-cost product-item__cost--disable cost--unit">7.000.000</div>
-                                            <div class="product-item__sale-cost product-item__cost--active cost--unit">30.900.000</div>
-                                            <div class="product-item__cost-icon free-ship">
-                                                <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
-                                                    <g fill="none" fill-rule="evenodd" transform="">
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
-                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
-                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
-                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <path
-                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
-                                                            fill="#fff"
-                                                        ></path>
-                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
-                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__status product-item-attribute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </div>
-                                            <div class="product-item__status-sell">Đã bán <span class="product-item__status-sell-qnt">16,5k</span></div>
-                                        </div>
-                                        <div class="product-item__location product-item-attribute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item grid__col-2-10">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <div class="product-item-img"></div>
-                                        <div class="background--freeship"></div>
-                                        <div class="fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div class="sell-rate_text">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-attribute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-attribute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-attribute--space">
-                                            <div class="product-item__original-cost product-item__cost--disable cost--unit">7.000.000</div>
-                                            <div class="product-item__sale-cost product-item__cost--active cost--unit">30.900.000</div>
-                                            <div class="product-item__cost-icon free-ship">
-                                                <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
-                                                    <g fill="none" fill-rule="evenodd" transform="">
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
-                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
-                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
-                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <path
-                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
-                                                            fill="#fff"
-                                                        ></path>
-                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
-                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__status product-item-attribute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </div>
-                                            <div class="product-item__status-sell">Đã bán <span class="product-item__status-sell-qnt">16,5k</span></div>
-                                        </div>
-                                        <div class="product-item__location product-item-attribute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item grid__col-2-10">
-                                <a href="" class="product-item__link">
-                                    <div class="product-item__img">
-                                        <div class="product-item-img"></div>
-                                        <div class="background--freeship"></div>
-                                        <div class="fav-label">
-                                            <div class="background--fav"></div>
-                                        </div>
-                                        <div class="sell-rate">
-                                            <div class="sell-rate_numb">35%</div>
-                                            <div class="sell-rate_text">GIẢM</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item__content">
-                                        <div class="product-item__name product-item-attribute--space">
-                                            [Date 2024] Gói Tẩy Da Chết Whoo Làm Sáng Da - Whoo Gongjinhyang Seol Brightening Gel
-                                        </div>
-                                        <div class="product-item__deal product-item-attribute--space">Mua Kèm Deal Cực Sốc</div>
-                                        <div class="product-item__cost product-item-attribute--space">
-                                            <div class="product-item__original-cost product-item__cost--disable cost--unit">7.000.000</div>
-                                            <div class="product-item__sale-cost product-item__cost--active cost--unit">30.900.000</div>
-                                            <div class="product-item__cost-icon free-ship">
-                                                <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
-                                                    <g fill="none" fill-rule="evenodd" transform="">
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
-                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
-                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
-                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
-                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
-                                                        <path
-                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
-                                                            fill="#fff"
-                                                        ></path>
-                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
-                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
-                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__status product-item-attribute--space">
-                                            <div class="product-item__status-favorite">
-                                                <span class="status-favorite__btn-list">
-                                                    <i class="far fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-nonrate status-favorite__btn-nonrate status-favorite__btn--visible"></i>
-                                                    <i class="fas fa-heart js-status-favorite__btn status-favorite__btn js-status-favorite__btn-rateup status-favorite__btn-rateup "></i>
-                                            </span>
-                                            </div>
-                                            <div class="status-rate__icon-list">
-                                                <i class="status-icon__item far fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                                <i class="status-icon__item fas fa-star"></i>
-                                            </div>
-                                            <div class="product-item__status-sell">Đã bán <span class="product-item__status-sell-qnt">16,5k</span></div>
-                                        </div>
-                                        <div class="product-item__location product-item-attribute--space">
-                                            Quảng Ninh
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="product-item grid__col-2-10">
+                            <div class="product-item col l-2-4 m-4 c-6">
                                 <a href="" class="product-item__link">
                                     <div class="product-item__img">
                                         <div class="product-item-img"></div>
@@ -1360,7 +869,7 @@
                             </div>
                         </div>
                         <!-- Switch Page -->
-                        <div class="switch-bar switchbar--space">
+                        <div class="switch-bar switchbar--space row no-gutters">
                             <a href="" class="switch-btn">
                                 <i class="fas fa-angle-left"></i>
                             </a>
@@ -1476,7 +985,7 @@
             const logoutBtn = document.querySelector('.user-info__option--logout a');
             loggedE.style.display = "none";
             for (const notLoginE of notLoginEs) {
-                notLoginE.style.display = "unset";
+                notLoginE.style.display = "flex";
             }
             change_mes();
             logoutBtn.preventDefault();
