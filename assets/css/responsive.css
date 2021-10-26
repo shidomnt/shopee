@@ -35,6 +35,10 @@
     .navbar__item-link-qrcode:hover .link__qrcode {
         display: none;
     }
+    .search__cart-popout-box {
+        width: 70vw;
+        max-height: 70vh;
+    }
 }
 
 
@@ -42,7 +46,8 @@
 
 @media (max-width: 739px) {
      :root {
-        --header-height: 81px
+        --header-height: 55px;
+        --navbar-height: 0px;
     }
     .grid.wide {
         max-width: calc(100% - 10px);
@@ -68,6 +73,9 @@
     .search__logo {
         text-align: center;
     }
+    .search__logo-svg {
+        width: 110px;
+    }
     .search-bar {
         position: fixed;
         top: calc(var(--header-height));
@@ -79,6 +87,9 @@
     }
     #search-bar-check:checked~.search-bar {
         transform: scale(1);
+    }
+    .search-bar__select {
+        display: none;
     }
     .search__cart {
         font-size: 2rem;
