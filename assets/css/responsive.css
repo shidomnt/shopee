@@ -238,7 +238,11 @@
         display: block;
         transform: scale(1);
     }
-    .switch-bar {
-        zoom: 0.5;
+    .switch-bar .switch-btn:nth-child(6) {
+        display: none;
+    }
+    .switch-btn {
+        font-size: 1.6rem;
+        margin: 0;
     }
 }
