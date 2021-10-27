@@ -253,6 +253,9 @@
         display: block;
         transform: scale(1);
     }
+    .switch-bar {
+        zoom: 0.91;
+    }
     .switch-bar .switch-btn:nth-child(6) {
         display: none;
     }
