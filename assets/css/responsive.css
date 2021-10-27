@@ -73,6 +73,10 @@
     .search__logo {
         text-align: center;
     }
+    .search__logo a {
+        display: block;
+        line-height: 0;
+    }
     .search__logo-svg {
         width: 110px;
     }
