@@ -45,6 +45,9 @@
 /* Mobile */
 
 @media (max-width: 739px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
      :root {
         --header-height: 55px;
         --navbar-height: 0px;
@@ -107,9 +110,6 @@
         max-height: 50vh;
         right: -35px;
         transform-origin: calc(100% - 45px) 0;
-    }
-    .search__cart-content {
-        -webkit-tap-highlight-color: transparent;
     }
     .search__cart-content--hover:hover .popout-box {
         transform: scale(0);
