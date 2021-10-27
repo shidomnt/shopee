@@ -264,3 +264,9 @@
         margin: 0;
     }
 }
+
+@media (max-width: 350px) {
+    .product-item__status-sell {
+        display: none;
+    }
+}
