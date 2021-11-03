@@ -1,3 +1,14 @@
+//More Product Item
+
+function addProduct(item) {
+    var listProducts = document.querySelector('.js-list-products');
+    listProducts.innerHTML += item;
+}
+
+for (let i = 0; i < 29; i++) {
+    addProduct(document.querySelector('.product-item').outerHTML);
+}
+
 //Sort Button
 const sortBtns = document.querySelectorAll('.js-sort-btn');
 
@@ -83,15 +94,4 @@ function logout() {
     }
     change_mes();
     logoutBtn.preventDefault();
-}
-
-//More Product Item
-
-function addProduct(item) {
-    var listProducts = document.querySelector('.js-list-products');
-    listProducts.innerHTML += item;
-}
-
-for (let i = 0; i < 29; i++) {
-    addProduct(document.querySelector('.product-item').outerHTML);
 }
